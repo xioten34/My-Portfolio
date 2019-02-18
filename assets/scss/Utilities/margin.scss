@@ -1,0 +1,495 @@
+$base: $utility-base;
+
+.has-no-margin {
+  margin: 0 !important;
+}
+
+.has-margin-auto {
+  margin: 0 auto !important;
+}
+
+.has-margin-1 {
+  margin: $base !important;
+}
+
+.has-margin-2 {
+  margin: $base * 1.5 !important;
+}
+
+.has-margin-3 {
+  margin: $base * 2 !important;
+}
+
+.has-margin-4 {
+  margin: $base * 2.5 !important;
+}
+
+.has-margin-5 {
+  margin: $base * 3 !important;
+}
+
+.has-margin-6 {
+  margin: $base * 3.5 !important;
+}
+
+.has-no-margin-top {
+  margin-top: 0 !important;
+}
+
+.has-margin-top-1 {
+  margin-top: $base !important;
+}
+
+.has-margin-top-2 {
+  margin-top: $base * 1.5 !important;
+}
+
+.has-margin-top-3 {
+  margin-top: $base * 2 !important;
+}
+
+.has-margin-top-4 {
+  margin-top: $base * 2.5 !important;
+}
+
+.has-margin-top-5 {
+  margin-top: $base * 3 !important;
+}
+
+.has-margin-top-6 {
+  margin-top: $base * 3.5 !important;
+}
+
+.has-margin-top-7 {
+  margin-top: $base * 4 !important;
+}
+
+.has-margin-top-8 {
+  margin-top: $base * 4.5 !important;
+}
+
+.has-margin-top-9 {
+  margin-top: $base * 5 !important;
+}
+
+.has-margin-top-10 {
+  margin-top: $base * 5.5 !important;
+}
+
+.has-margin-top-11 {
+  margin-top: $base * 6 !important;
+}
+
+.has-margin-top-12 {
+  margin-top: $base * 6.5 !important;
+}
+
+.has-margin-bottom-0 {
+  margin-bottom: 0 !important;
+}
+
+.has-margin-bottom-1 {
+  margin-bottom: $base !important;
+}
+
+.has-margin-bottom-2 {
+  margin-bottom: $base * 1.5 !important;
+}
+
+.has-margin-bottom-3 {
+  margin-bottom: $base * 2 !important;
+}
+
+.has-margin-bottom-4 {
+  margin-bottom: $base * 2.5 !important;
+}
+
+.has-margin-bottom-5 {
+  margin-bottom: $base * 3 !important;
+}
+
+.has-margin-bottom-6 {
+  margin-bottom: $base * 3.5 !important;
+}
+
+.has-margin-bottom-7 {
+  margin-bottom: $base * 4 !important;
+}
+
+.has-margin-bottom-8 {
+  margin-bottom: $base * 4.5 !important;
+}
+
+.has-margin-bottom-9 {
+  margin-bottom: $base * 5 !important;
+}
+
+.has-margin-bottom-10 {
+  margin-bottom: $base * 5.5 !important;
+}
+
+.has-margin-bottom-11 {
+  margin-bottom: $base * 6 !important;
+}
+
+.has-margin-bottom-12 {
+  margin-bottom: $base * 6.5 !important;
+}
+
+.has-margin-right-1 {
+  margin-right: $base !important;
+}
+
+.has-margin-right-2 {
+  margin-right: $base * 1.5 !important;
+}
+
+.has-margin-right-3 {
+  margin-right: $base * 2 !important;
+}
+
+.has-margin-right-4 {
+  margin-right: $base * 2.5 !important;
+}
+
+.has-margin-right-5 {
+  margin-right: $base * 3 !important;
+}
+
+.has-margin-right-6 {
+  margin-right: $base * 3.5 !important;
+}
+
+.has-margin-left-1 {
+  margin-left: $base !important;
+}
+
+.has-margin-left-2 {
+  margin-left: $base * 1.5 !important;
+}
+
+.has-margin-left-3 {
+  margin-left: $base * 2 !important;
+}
+
+.has-margin-left-4 {
+  margin-left: $base * 2.5 !important;
+}
+
+.has-margin-left-5 {
+  margin-left: $base * 3 !important;
+}
+
+.has-margin-left-6 {
+  margin-left: $base * 3.5 !important;
+}
+
+.has-margin-y-1 {
+  margin-top: $base !important;
+  margin-bottom: $base !important;
+}
+
+.has-margin-y-2 {
+  margin-top: $base * 1.5 !important;
+  margin-bottom: $base * 1.5 !important;
+}
+
+.has-margin-y-3 {
+  margin-top: $base * 2 !important;
+  margin-bottom: $base * 2 !important;
+}
+
+.has-margin-y-4 {
+  margin-top: $base * 2.5 !important;
+  margin-bottom: $base * 2.5 !important;
+}
+
+.has-margin-y-5 {
+  margin-top: $base * 3 !important;
+  margin-bottom: $base * 3 !important;
+}
+
+.has-margin-y-6 {
+  margin-top: $base * 3.5 !important;
+  margin-bottom: $base * 3.5 !important;
+}
+
+.has-margin-y-7 {
+  margin-top: $base * 4 !important;
+  margin-bottom: $base * 4 !important;
+}
+
+.has-margin-y-8 {
+  margin-top: $base * 4.5 !important;
+  margin-bottom: $base * 4.5 !important;
+}
+
+.has-margin-y-9 {
+  margin-top: $base * 5 !important;
+  margin-bottom: $base * 5 !important;
+}
+
+.has-margin-y-10 {
+  margin-top: $base * 5.5 !important;
+  margin-bottom: $base * 5.5 !important;
+}
+
+.has-margin-y-11 {
+  margin-top: $base * 6 !important;
+  margin-bottom: $base * 6 !important;
+}
+
+.has-margin-y-12 {
+  margin-top: $base * 6.5 !important;
+  margin-bottom: $base * 6.5 !important;
+}
+
+.has-margin-x-1 {
+  margin-left: $base !important;
+  margin-right: $base !important;
+}
+
+.has-margin-x-2 {
+  margin-left: $base * 1.5 !important;
+  margin-right: $base * 1.5 !important;
+}
+
+.has-margin-x-3 {
+  margin-left: $base * 2 !important;
+  margin-right: $base * 2 !important;
+}
+
+.has-margin-x-4 {
+  margin-left: $base * 2.5 !important;
+  margin-right: $base * 2.5 !important;
+}
+
+.has-margin-x-5 {
+  margin-left: $base * 3 !important;
+  margin-right: $base * 3 !important;
+}
+
+.has-margin-x-6 {
+  margin-left: $base * 3.5 !important;
+  margin-right: $base * 3.5 !important;
+}
+
+.has-margin-x-7 {
+  margin-left: $base * 4 !important;
+  margin-right: $base * 4 !important;
+}
+
+.has-margin-x-8 {
+  margin-left: $base * 4.5 !important;
+  margin-right: $base * 4.5 !important;
+}
+
+.has-margin-x-9 {
+  margin-top: $base * 5 !important;
+  margin-bottom: $base * 5 !important;
+}
+
+.has-margin-x-10 {
+  margin-top: $base * 5.5 !important;
+  margin-bottom: $base * 5.5 !important;
+}
+
+.has-margin-x-11 {
+  margin-top: $base * 6 !important;
+  margin-bottom: $base * 6 !important;
+}
+
+.has-margin-x-12 {
+  margin-top: $base * 6.5 !important;
+  margin-bottom: $base * 6.5 !important;
+}
+
+@media screen and (max-width: $mobile) {
+  .has-no-margin-mobile {
+    margin: 0 !important;
+  }
+
+  .has-margin-auto-mobile {
+    margin: 0 auto !important;
+  }
+
+  .has-margin-1-mobile {
+    margin: $base !important;
+  }
+
+  .has-margin-2-mobile {
+    margin: $base * 1.5 !important;
+  }
+
+  .has-margin-3-mobile {
+    margin: $base * 2 !important;
+  }
+
+  .has-margin-4-mobile {
+    margin: $base * 2.5 !important;
+  }
+
+  .has-margin-5-mobile {
+    margin: $base * 3 !important;
+  }
+
+  .has-margin-6-mobile {
+    margin: $base * 3.5 !important;
+  }
+
+  .has-margin-top-1-mobile {
+    margin-top: $base !important;
+  }
+
+  .has-margin-top-2-mobile {
+    margin-top: $base * 1.5 !important;
+  }
+
+  .has-margin-top-3-mobile {
+    margin-top: $base * 2 !important;
+  }
+
+  .has-margin-top-4-mobile {
+    margin-top: $base * 2.5 !important;
+  }
+
+  .has-margin-top-5-mobile {
+    margin-top: $base * 3 !important;
+  }
+
+  .has-margin-top-6-mobile {
+    margin-top: $base * 3.5 !important;
+  }
+
+  .has-margin-bottom-1-mobile {
+    margin-bottom: $base !important;
+  }
+
+  .has-margin-bottom-2-mobile {
+    margin-bottom: $base * 1.5 !important;
+  }
+
+  .has-margin-bottom-3-mobile {
+    margin-bottom: $base * 2 !important;
+  }
+
+  .has-margin-bottom-4-mobile {
+    margin-bottom: $base * 2.5 !important;
+  }
+
+  .has-margin-bottom-5-mobile {
+    margin-bottom: $base * 3 !important;
+  }
+
+  .has-margin-bottom-6-mobile {
+    margin-bottom: $base * 3.5 !important;
+  }
+
+  .has-margin-right-1-mobile {
+    margin-right: $base !important;
+  }
+
+  .has-margin-right-2-mobile {
+    margin-right: $base * 1.5 !important;
+  }
+
+  .has-margin-right-3-mobile {
+    margin-right: $base * 2 !important;
+  }
+
+  .has-margin-right-4-mobile {
+    margin-right: $base * 2.5 !important;
+  }
+
+  .has-margin-right-5-mobile {
+    margin-right: $base * 3 !important;
+  }
+
+  .has-margin-right-6-mobile {
+    margin-right: $base * 3.5 !important;
+  }
+
+  .has-margin-left-1-mobile {
+    margin-left: $base !important;
+  }
+
+  .has-margin-left-2-mobile {
+    margin-left: $base * 1.5 !important;
+  }
+
+  .has-margin-left-3-mobile {
+    margin-left: $base * 2 !important;
+  }
+
+  .has-margin-left-4-mobile {
+    margin-left: $base * 2.5 !important;
+  }
+
+  .has-margin-left-5-mobile {
+    margin-left: $base * 3 !important;
+  }
+
+  .has-margin-left-6-mobile {
+    margin-left: $base * 3.5 !important;
+  }
+
+  .has-margin-y-1-mobile {
+    margin-top: $base !important;
+    margin-bottom: $base !important;
+  }
+
+  .has-margin-y-2-mobile {
+    margin-top: $base * 1.5 !important;
+    margin-bottom: $base * 1.5 !important;
+  }
+
+  .has-margin-y-3-mobile {
+    margin-top: $base * 2 !important;
+    margin-bottom: $base * 2 !important;
+  }
+
+  .has-margin-y-4-mobile {
+    margin-top: $base * 2.5 !important;
+    margin-bottom: $base * 2.5 !important;
+  }
+
+  .has-margin-y-5-mobile {
+    margin-top: $base * 3 !important;
+    margin-bottom: $base * 3 !important;
+  }
+
+  .has-margin-y-6-mobile {
+    margin-top: $base * 3.5 !important;
+    margin-bottom: $base * 3.5 !important;
+  }
+
+  .has-margin-x-1-mobile {
+    margin-left: $base !important;
+    margin-right: $base !important;
+  }
+
+  .has-margin-x-2-mobile {
+    margin-left: $base * 1.5 !important;
+    margin-right: $base * 1.5 !important;
+  }
+
+  .has-margin-x-3-mobile {
+    margin-left: $base * 2 !important;
+    margin-right: $base * 2 !important;
+  }
+
+  .has-margin-x-4-mobile {
+    margin-left: $base * 2.5 !important;
+    margin-right: $base * 2.5 !important;
+  }
+
+  .has-margin-x-5-mobile {
+    margin-left: $base * 3 !important;
+    margin-right: $base * 3 !important;
+  }
+
+  .has-margin-x-6-mobile {
+    margin-left: $base * 3.5 !important;
+    margin-right: $base * 3.5 !important;
+  }
+}

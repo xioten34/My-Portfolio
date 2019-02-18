@@ -1,0 +1,17 @@
+.has-text-corail {
+    color: $corail !important;
+    a {
+        color: $corail !important;
+    }
+}
+.has-background-corail {
+    background-color: $corail !important;
+    color: $white !important;
+    &:hover {
+        background-color: $corail-light !important;
+        color: $white !important;
+    }
+}
+.has-background-transparent {
+    background-color: transparent !important;
+}
