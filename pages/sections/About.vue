@@ -21,7 +21,7 @@
                     <div class="columns is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
                         <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-quarter-mobile is-one-third-tablet">
                             <figure class="image is-clipped is-square">
-                                <img class="has-background-corail" src="" alt="">
+                                <img class="has-background-corail has-padding-1" :src="'/skills/' + skill.img + '.svg'" alt="">
                             </figure>
                         </div>
                     </div>
@@ -64,51 +64,51 @@
                 skills: [
                     {
                         name: 'HTML',
-                        img: ''
+                        img: 'adobe-photoshop-brands'
                     },
                     {
                         name: 'CSS',
-                        img: ''
+                        img: 'adobe-illustrator-brands'
                     },
                     {
                         name: 'SCSS',
-                        img: ''
+                        img: 'adobe-xd-brands'
                     },
                     {
                         name: 'JS',
-                        img: ''
+                        img: 'adobe-indesign-brands'
                     },
                     {
                         name: 'VueJs',
-                        img: ''
+                        img: 'affinity-designer-brands'
                     },
                     {
                         name: 'Xd',
-                        img: ''
+                        img: 'html5-brands'
                     },
                     {
                         name: 'Photoshop',
-                        img: ''
+                        img: 'css3-brands'
                     },
                     {
                         name: 'Illustrator',
-                        img: ''
+                        img: 'sass-brands'
                     },
                     {
                         name: 'Inesign',
-                        img: ''
+                        img: 'js-brands'
                     },
                     {
                         name: 'Infinity designer',
-                        img: ''
+                        img: 'vuejs-brands'
                     },
                     {
                         name: 'Git',
-                        img: ''
+                        img: 'git-brands'
                     },
                     {
                         name: '...',
-                        img: ''
+                        img: 'ellipsis-h-solid'
                     }
                 ],
                 experiences: [
