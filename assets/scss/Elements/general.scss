@@ -26,6 +26,7 @@
 .is-align-center {
     display: flex !important;
     align-items: center;
+    justify-content: center !important;
     flex-grow: 1;
 }
 .has-no-border {
@@ -52,4 +53,22 @@ figure {
     img {
         border-radius: 5px !important;
     }
+}
+// tooltip
+.is-hover {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transition: all 1s;
+    background-color: rgba(0,0,0,0);
+    color: rgba(255,255,255,0);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 0.75em;
+}
+.is-skill:hover .is-hover {
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #ffffff;
 }

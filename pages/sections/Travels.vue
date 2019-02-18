@@ -3,20 +3,21 @@
         <modal v-show="isModalActive" :active="isModalActive" @close="isModalActive = false"></modal>
         <div class="container has-margin-y-12 has-padding-left-1-tablet">
             <div class="columns">
-                <div class="column is-5 is-flex">
+                <div class="column is-4 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
                             <span class="has-text-weight-semibold has-text-grey-light">Travel<span class="has-text-corail">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
                                 I take my inspiration<br>from travels<span class="has-text-corail">.</span>
                             </h2>
-                            <h2 class="subtitle is-size-3 has-text-weight-light has-text-corail">
-                                Thinking, Loving & Making<br>Webdesign
-                            </h2>
+                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
+                                I'm interested by a lot of thing around the web, espacially webdesign, but i can also coding as front-end but sometime using php but infortunaltly not my speciallity.
+                                I started to work by myself as freelancer but finallly i looked for a job in company after came back school. I work for a french company and also Swedish startup. Next step is to find job in Japan.
+                            </p>
                         </div>
                     </section>
                 </div>
-                <div class="column is-5">
+                <div class="column is-5 is-offset-1">
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical">
                             <div class="tile">

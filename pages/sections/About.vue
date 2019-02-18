@@ -3,25 +3,28 @@
         <modal v-show="isModalActive" :active="isModalActive" :data="experiences" @close="isModalActive = false"></modal>
         <div class="container has-margin-y-12 has-padding-left-1-tablet">
             <div class="columns">
-                <div class="column is-5 is-flex">
+                <div class="column is-4 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
                             <span class="has-text-weight-semibold has-text-grey-light">About me<span class="has-text-corail">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
                                 I love webdesign<br><span class="has-text-corail">&</span> also front-end design<span class="has-text-corail">.</span>
                             </h2>
-                            <h2 class="subtitle is-size-3 has-text-weight-light has-text-corail">
-                                Thinking, Loving & Making<br>Webdesign
-                            </h2>
+                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
+                                I'm interested by a lot of thing around the web, espacially webdesign, but i can also coding as front-end but sometime using php but infortunaltly not my speciallity.
+                                I started to work by myself as freelancer but finallly i looked for a job in company after came back school. I work for a french company and also Swedish startup. Next step is to find job in Japan.
+                            </p>
+                            <a href="#" class="button has-no-border has-background-corail has-margin-top-2">My resume <fa-icon class="has-margin-left-1" :icon="['fa', 'long-arrow-alt-right']" /></a>
                         </div>
                     </section>
                 </div>
-                <div class="column is-5">
+                <div class="column is-5 is-offset-1">
                     <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">What i know <span class="has-text-corail">&</span> what i use<span class="has-text-corail">.</span></div>
                     <div class="columns is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
-                        <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-quarter-mobile is-one-third-tablet">
-                            <figure class="image is-clipped is-square">
+                        <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-fifth-mobile is-one-third-tablet">
+                            <figure class="image is-square is-skill"> <!-- is-clipped -->
                                 <img class="has-background-corail has-padding-1" :src="'/skills/' + skill.img + '.svg'" alt="">
+                                <div class="is-hover is-align-center">{{ skill.name }}</div>
                             </figure>
                         </div>
                     </div>
@@ -38,7 +41,6 @@
                         </hooper>
                     </div>
                 </div>
-                <div class="column is-1 is-offset-1"></div>
             </div>
         </div>
     </section>
@@ -63,51 +65,51 @@
                 isModalActive: false,
                 skills: [
                     {
-                        name: 'HTML',
+                        name: 'Adobe photoshop',
                         img: 'adobe-photoshop-brands'
                     },
                     {
-                        name: 'CSS',
+                        name: 'Adobe illustrator',
                         img: 'adobe-illustrator-brands'
                     },
                     {
-                        name: 'SCSS',
+                        name: 'Adobe xd',
                         img: 'adobe-xd-brands'
                     },
                     {
-                        name: 'JS',
+                        name: 'Adobe indesign',
                         img: 'adobe-indesign-brands'
                     },
                     {
-                        name: 'VueJs',
+                        name: 'Affinity designer',
                         img: 'affinity-designer-brands'
                     },
                     {
-                        name: 'Xd',
+                        name: 'HTML5',
                         img: 'html5-brands'
                     },
                     {
-                        name: 'Photoshop',
+                        name: 'CCS3',
                         img: 'css3-brands'
                     },
                     {
-                        name: 'Illustrator',
+                        name: 'Sass',
                         img: 'sass-brands'
                     },
                     {
-                        name: 'Inesign',
+                        name: 'Javascript',
                         img: 'js-brands'
                     },
                     {
-                        name: 'Infinity designer',
+                        name: 'Vue.js',
                         img: 'vuejs-brands'
                     },
                     {
-                        name: 'Git',
-                        img: 'git-brands'
+                        name: 'Wordpress',
+                        img: 'wordpress-simple-brands'
                     },
                     {
-                        name: '...',
+                        name: 'And more',
                         img: 'ellipsis-h-solid'
                     }
                 ],
