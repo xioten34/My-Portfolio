@@ -54,6 +54,27 @@ figure {
         border-radius: 5px !important;
     }
 }
+.is-img-experience {
+    border-radius: 5px;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
+.is-overlay {
+    background-color: hsla(0,0%,4%,.8) !important;
+    z-index: 80;
+}
+.is-overlay-project {
+    background-color: hsla(0,0%,4%,.2) !important;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+}
 .is-cursor-hand {
     cursor: pointer;
 }

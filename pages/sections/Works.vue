@@ -11,7 +11,7 @@
                     I started to work by myself as freelancer but finallly i looked for a job in company after came back school. I work for a french company and also Swedish startup. Next step is to find job in Japan.
                 </p>
             </div>
-            <img slot="image-modal" :src="'/works/' + this.currentWork.img + '.png'" :alt="this.currentWork.name">
+            <img slot="image-modal" :src="'/works/' + this.currentWork.img + '.png'" :alt="this.currentWork.name"> <!-- img size 320x480 -->
         </modal>
         <div class="container has-margin-top-12 has-margin-bottom-6 has-padding-left-1-tablet">
             <div class="columns">

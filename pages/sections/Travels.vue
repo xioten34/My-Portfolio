@@ -2,7 +2,7 @@
     <section id="travels">
         <modal v-show="isModalActive" @close="isModalActive = false">
             <div slot="text-modal">
-                <span class="has-text-weight-semibold has-text-grey-light">About me<span class="has-text-corail">.</span></span>
+                <span class="has-text-weight-semibold has-text-grey-light">Travels<span class="has-text-corail">.</span></span>
                 <h2 class="title has-text-weight-bold has-margin-top-2">
                     I love webdesign<br><span class="has-text-corail">&</span> also front-end design<span class="has-text-corail">.</span>
                 </h2>
@@ -17,7 +17,7 @@
                 <div class="column is-4 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
-                            <span class="has-text-weight-semibold has-text-grey-light">Travel<span class="has-text-corail">.</span></span>
+                            <span class="has-text-weight-semibold has-text-grey-light">Travels<span class="has-text-corail">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
                                 I take my inspiration<br>from travels<span class="has-text-corail">.</span>
                             </h2>

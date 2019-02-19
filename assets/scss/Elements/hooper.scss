@@ -9,11 +9,14 @@
 .hooper-slide{position: relative; flex-shrink:0;height:200px;background-color: #eee;border: 5px solid #fff;border-radius: 10px;
     h3 {
         position: absolute;
+        z-index: 8;
+        color: $white;
         left: 0.75rem;
         bottom: 1.25rem;
     }
     .button {
         position: absolute !important;
+        z-index: 8;
         right: 1.5rem !important;
         bottom: 1.05rem !important;
     }

@@ -42,7 +42,9 @@
                     <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">Where i used it <span class="has-text-corail">&</span> where i improved it<span class="has-text-corail">.</span></div>
                     <div class="columns is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile is-clipped has-padding-left-20px">
                         <hooper  :settings="hooperSettings">
-                            <slide v-for="exp in experiences" :key="exp.id" class="has-background-corail">
+                            <slide v-for="exp in experiences" :key="exp.id">
+                                <div class="is-overlay-project"></div>
+                                <img class="is-img-experience" :src="'/experiences/' + exp.img + '.jpg'" alt="lund ideon" />
                                 <h3 class="has-padding-left-1">
                                     {{ exp.name }}
                                 </h3>
@@ -139,12 +141,15 @@
                 experiences: [
                     {
                         name: 'Memlin',
+                        img: 'lund_ideon'
                     },
                     {
                         name: 'eCare',
+                        img: 'montpellier'
                     },
                     {
                         name: 'Freelance',
+                        img: 'freelance'
                     }
                 ]
             }
