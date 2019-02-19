@@ -1,5 +1,5 @@
 <template>
-    <div class="container has-margin-y-5">
+    <section class="container has-margin-y-5" id="home">
         <div class="columns">
             <div class="column has-text-centered is-5 is-offset-1">
                 <img class="img-face" src="~assets/images/svg/element/portrait.svg" />
@@ -28,7 +28,7 @@
                 </section>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>

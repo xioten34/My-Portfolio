@@ -54,6 +54,9 @@ figure {
         border-radius: 5px !important;
     }
 }
+.is-cursor-hand {
+    cursor: pointer;
+}
 // tooltip
 .is-hover {
     display: inline-block;
@@ -71,4 +74,11 @@ figure {
 .is-skill:hover .is-hover {
     background-color: hsla(0, 0%, 20%, 0.9);
     color: #ffffff;
+}
+.is-skills {
+    div:last-child {
+        .is-hover {
+            display: none !important;
+        }
+    }
 }

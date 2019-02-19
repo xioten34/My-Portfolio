@@ -1,3 +1,30 @@
-.modal-background {
-    background-color: $corail !important;
+// modal
+.d-modal {
+    display: flex;
+    max-height: calc(100vh - 40px);
+}
+.d-modal-background {
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $corail;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// modal transition
+.modal-fade-enter,
+.modal-fade-leave-active {
+    opacity: 0;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+    transition: opacity .5s ease
+}
+.d-modal-fullheight {
+    max-height: calc(100vh - 40px);
 }

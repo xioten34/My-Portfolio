@@ -12,14 +12,10 @@
         left: 0.75rem;
         bottom: 1.25rem;
     }
-    a {
-        background-color: $corail;
-        padding: 0.2rem 0.5rem;
-        border-radius: 3px;
-        color: $white;
-        position: absolute;
-        right: 1.5rem;
-        bottom: 1.05rem;
+    .button {
+        position: absolute !important;
+        right: 1.5rem !important;
+        bottom: 1.05rem !important;
     }
 }
 .hooper.is-vertical .hooper-track{flex-direction:column;height:200px
