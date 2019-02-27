@@ -8,10 +8,10 @@
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
                         <h1 class="title is-size-1 is-uppercase has-text-weight-bold">
-                            Damien<span class="has-text-corail">.</span>
+                            {{ $t('home.name') }}<span class="has-text-corail">.</span>
                         </h1>
                         <h2 class="subtitle is-size-3 has-text-weight-light has-text-corail">
-                            Thinking, Loving & Making<br>Webdesign
+                            {{ $t('home.subtitle_1') }}<br>{{ $t('home.subtitle_2') }}
                         </h2>
                     </div>
                 </section>

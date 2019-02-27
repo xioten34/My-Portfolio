@@ -5,7 +5,7 @@
                 <a href="#" class="navbar-item has-no-padding is-logo">
                     <img src="~assets/images/svg/logo/logo.svg">
                 </a>
-                <div class="navbar-item has-text-weight-bold">Damien <span class="has-text-corail">.</span></div>
+                <div class="navbar-item has-text-weight-bold">{{ $t('home.name') }} <span class="has-text-corail">.</span></div>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -40,10 +40,7 @@
             }
         },
         methods: {
-            switchLang(language) {
-                const html = document.documentElement
-                html.setAttribute('lang', language)
-            }
+
         }
     }
 </script>

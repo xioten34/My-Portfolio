@@ -1,26 +1,18 @@
 <template>
     <section id="works">
         <modal v-show="isModalActive" @close="isModalActive = false">
-            <div slot="text-modal">
-                <span class="has-text-weight-semibold has-text-white">Works<span class="has-text-white">.</span></span>
-                <h2 class="title has-text-weight-bold has-margin-top-2">
-                    {{ this.currentWork.name }}<span class="has-text-white">.</span>
-                </h2>
-                <p class="is-size-6 has-text-weight-light has-text-justified has-text-white">
-                    I'm interested by a lot of thing around the web, espacially webdesign, but i can also coding as front-end but sometime using php but infortunaltly not my speciallity.
-                    I started to work by myself as freelancer but finallly i looked for a job in company after came back school. I work for a french company and also Swedish startup. Next step is to find job in Japan.
-                </p>
-            </div>
-            <img slot="image-modal" :src="'/works/' + this.currentWork.img + '.png'" :alt="this.currentWork.name"> <!-- img size 320x480 -->
+            <p slot="image-modal" :class="'image ' + this.currentWork.size">
+                <img class="img-modal" :src="'/works/' + this.currentWork.img + '.png'" :alt="this.currentWork.name">
+            </p>
         </modal>
         <div class="container has-margin-top-12 has-margin-bottom-6 has-padding-left-1-tablet">
             <div class="columns">
                 <div class="column is-5 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
-                            <span class="has-text-weight-semibold has-text-grey-light">Portfolio<span class="has-text-corail">.</span></span>
+                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.portfolio') }}<span class="has-text-corail">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
-                                Some of my work<span class="has-text-corail">.</span>
+                                {{ $t('main_title.portfolio') }}<span class="has-text-corail">.</span>
                             </h2>
                         </div>
                     </section>
@@ -33,9 +25,16 @@
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical">
                             <div class="tile">
+                                <div class="tile is-parent">
+                                    <article class="tile is-child">
+                                        <figure class="image is-clipped is-square">
+                                            <img class="has-background-corail is-cursor-hand" :src="'/works/' + this.firstWork.img + '.png'" alt="logo" @click="showModalFirst()">
+                                        </figure>
+                                    </article>
+                                </div>
                                 <div class="tile is-vertical is-parent">
                                     <div class="columns is-multiline is-mobile">
-                                        <div v-for="(work, key) in works" :key="key" class="column is-one-fifth-desktop is-one-quarter-mobile">
+                                        <div v-for="(work, key) in works" :key="key" class="column is-one-third-desktop is-one-third-tablet is-one-third-mobile">
                                             <article class="tile is-child">
                                                 <figure class="image is-clipped is-square">
                                                     <img class="has-background-corail is-cursor-hand" :src="'/works/' + work.img + '.png'" alt="logo" @click="showModal(works[key])">
@@ -63,76 +62,92 @@
         data() {
             return {
                 isModalActive: false,
+                firstWork: {
+                    name: 'UI design',
+                    type: 'ui-design',
+                    img: 'event',
+                    size: 'is-4by3'
+                },
                 works: [
                     {
                         name: 'Company logo',
+                        type: 'logo',
                         img: 'logo_up',
-                        text: ''
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'Business card',
+                        type: 'illustration',
+                        img: 'business_card',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'In Leather',
+                        type: 'logo',
+                        img: 'inleather_logo',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'My illustration',
+                        type: 'illustration',
+                        img: 'damien',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'Portfolio',
+                        type: 'ui-design',
+                        img: 'portfolio',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'design website',
+                        type: 'ui-design',
+                        img: 'corpsetame',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'ui-design',
+                        type: 'ui-design',
+                        img: 'event-spa',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
+                        name: 'mobile design',
+                        type: 'ui-design',
+                        img: 'mobile-portfolio',
+                        size: 'is-4by3'
                     },
                     {
-                        name: '',
-                        img: '',
-                        text: ''
-                    },
-                    {
-                        name: '',
-                        img: '',
-                        text: ''
-                    },
-                    
+                        name: 'ui-design',
+                        type: 'ui-design',
+                        img: 'security',
+                        size: 'is-4by3'
+                    }                    
                 ],
                 currentWork: {
-                    name: '',
+                    name: 'test',
+                    type: '',
                     img: '',
-                    title: '',
-                    text: ''
+                    size: '',
+                    title: ''
                 }
             }
         },
         methods: {
-            showModal(work) {
-                console.log(work)
-                this.currentWork.name = work.name
-                this.currentWork.img = work.img + '_big'
-                this.currentWork.path = work.path
-                this.currentWork.text = work.text
+            showModalFirst() {
+                this.currentWork.name = this.firstWork.name
+                this.currentWork.img = this.firstWork.img + '_big'
+                this.currentWork.size = this.firstWork.size
+                this.currentWork.path = this.firstWork.path
                 this.isModalActive = true
             },
+            showModal(work) {
+                this.currentWork.name = work.name
+                this.currentWork.img = work.img + '_big'
+                this.currentWork.size = work.size
+                this.currentWork.path = work.path
+                this.isModalActive = true
+            }
         }
     }
 </script>

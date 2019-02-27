@@ -16,6 +16,7 @@
     import travels from './sections/Travels'
 
     export default {
+        transition: 'modal-fade',
         components: {
             mainMenu,
             home,
