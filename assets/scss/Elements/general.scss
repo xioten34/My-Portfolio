@@ -20,6 +20,9 @@
         }
     }
 }
+.nuxt-link-exact-active {
+    color: $corail !important;
+}
 .has-fullheight {
     height: 100% !important;
 }
@@ -58,6 +61,10 @@ figure {
     border-radius: 5px;
     width: 100% !important;
     height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+}
+.is-img-travels {
     object-fit: cover;
     object-position: center;
 }
