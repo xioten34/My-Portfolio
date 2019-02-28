@@ -1,8 +1,8 @@
 {
-  "name": "my-portfolio",
+  "name": "damien-webdesigner",
   "version": "1.0.0",
-  "description": "My neat Nuxt.js project",
-  "author": "Damien",
+  "description": "Welcome on my web design portfolio. I introduce you my skills, experiences and works.",
+  "author": "Damien Jaillot",
   "private": true,
   "scripts": {
     "dev": "nuxt",

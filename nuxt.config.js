@@ -4,6 +4,10 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
 
+ /* router: {
+    base: '/portfolio-test/'
+  }, */
+
   /*
   ** Headers of the page
   */
@@ -15,7 +19,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans:bold,thin|Noto+Sans+JP:black,bold,thin' },
     ]
   },
 
