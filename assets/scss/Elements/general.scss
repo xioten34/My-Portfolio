@@ -1,4 +1,5 @@
 .container {
+    overflow: hidden !important;
     .img {
         &-face {
             height: auto;
@@ -37,8 +38,11 @@
 }
 .is-icon-list {
     position: fixed;
-    margin: 0 auto !important;
+    top: 0;
+    right: 3rem;
+    bottom: 0;
     text-align: center !important;
+    font-size: 1.2rem;
     z-index: 20 !important;
     span {
         writing-mode: vertical-rl;
