@@ -5,6 +5,27 @@
         <about />
         <works />
         <travels />
+        <section class="has-fullheight is-icon-list is-align-center has-text-corail">
+            <p>
+                <!-- <span>social media —</span> -->
+                <a href="https://www.instagram.com/j.dams" target="_blank"><fa-icon class="has-no-margin-top" :icon="['fab', 'instagram']" /></a>
+                <a href="https://www.linkedin.com/in/damien-jaillot" target="_blank"><fa-icon :icon="['fab', 'linkedin']" /></a>
+                <a href="https://github.com/xioten34" target="_blank"><fa-icon :icon="['fab', 'github']" /></a>
+                <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
+            </p>
+        </section>
+        <footer class="footer">
+            <div class="content is-size-2 has-text-weight-semibold has-text-centered">
+                <p>
+                    {{ $t('contact') }} <a class="has-text-corail" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a>{{ $t('contact_jp') }}<span class="has-text-corail">.</span>
+                </p>
+            </div>
+            <div class="content has-text-centered">
+                <p>
+                    <strong>{{ $t('footer.text_1') }}</strong>{{ $t('footer.text_2') }}<a class="has-text-corail" href="https://www.linkedin.com/in/damien-jaillot">Damien Jaillot</a>{{ $t('footer.text_3') }}. {{ $t('footer.text_4') }}<a class="has-text-corail" href="https://github.com/xioten34">Github</a>{{ $t('footer.text_5') }}.
+                </p>
+            </div>
+        </footer>
     </div>
 </template>
 

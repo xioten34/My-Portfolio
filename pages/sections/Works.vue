@@ -2,7 +2,7 @@
     <section id="works">
         <modal v-show="isModalActive" @close="isModalActive = false">
             <p slot="image-modal" :class="'image ' + this.currentWork.size">
-                <img class="img-modal" :src="'/works/' + this.currentWork.img + '.png'" :alt="this.currentWork.name">
+                <img class="img-modal" :src="this.currentWork.img" :alt="this.currentWork.name">
             </p>
         </modal>
         <div class="container has-margin-top-12 has-margin-bottom-6 has-padding-left-1-tablet">
@@ -28,7 +28,7 @@
                                 <div class="tile is-parent">
                                     <article class="tile is-child">
                                         <figure class="image is-clipped is-square">
-                                            <img class="has-background-corail is-cursor-hand" :src="'/works/' + this.firstWork.img + '.png'" alt="logo" @click="showModalFirst()">
+                                            <img class="has-background-corail is-cursor-hand" :src="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
                                         </figure>
                                     </article>
                                 </div>
@@ -37,7 +37,7 @@
                                         <div v-for="(work, key) in works" :key="key" class="column is-one-third-desktop is-one-third-tablet is-one-third-mobile">
                                             <article class="tile is-child">
                                                 <figure class="image is-clipped is-square">
-                                                    <img class="has-background-corail is-cursor-hand" :src="'/works/' + work.img + '.png'" alt="logo" @click="showModal(works[key])">
+                                                    <img class="has-background-corail is-cursor-hand" :src="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
                                                 </figure>
                                             </article>
                                         </div>
@@ -58,6 +58,14 @@
     export default {
         components: {
             Modal,
+        },
+        head () {
+            return {
+                title: 'Damien - webdesigner',
+                meta: [
+                    { hid: 'description', name: 'description', content: 'Some of my web design and graphic design work' }
+                ]
+            }
         },
         data() {
             return {
@@ -136,14 +144,14 @@
         methods: {
             showModalFirst() {
                 this.currentWork.name = this.firstWork.name
-                this.currentWork.img = this.firstWork.img + '_big'
+                this.currentWork.img = require('~/assets/images/works/' + this.firstWork.img + '_big.png') 
                 this.currentWork.size = this.firstWork.size
                 this.currentWork.path = this.firstWork.path
                 this.isModalActive = true
             },
             showModal(work) {
                 this.currentWork.name = work.name
-                this.currentWork.img = work.img + '_big'
+                this.currentWork.img = require('~/assets/images/works/' + work.img + '_big.png')
                 this.currentWork.size = work.size
                 this.currentWork.path = work.path
                 this.isModalActive = true

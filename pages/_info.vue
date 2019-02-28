@@ -17,7 +17,7 @@
                 </div>
                 <div class="column has-padding-x-3 is-5 is-offset-1">
                     <figure class="image is-4by5">
-                        <img class="img-modal" :src="'/experiences/' + $route.params.info + '.jpg'" :alt="$route.params.info">
+                        <img class="img-modal" :src="require('~/assets/images/experiences/' + $route.params.info + '.jpg')" :alt="$route.params.info">
                     </figure>
                 </div>
             </div>
@@ -31,9 +31,16 @@
 <script>
     export default {
         transition: 'modal-fade',
-        data() {
+        head () {
+            let info = this.$route.params.info;
+            
             return {
-
+            title: `${info}`,
+            meta: [{
+                hid: `description`,
+                property: 'description',
+                content: `Some of my experiences in web design, front-end design and also graph design.`
+            }]
             }
         }
     }

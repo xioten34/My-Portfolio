@@ -22,7 +22,7 @@
                                 <div class="column">
                                     <article class="tile is-child">
                                         <figure class="image is-clipped is-2by3">
-                                            <img class="has-background-corail is-img-travels" src="/travels/indonesia.jpg" alt="Indonesia">
+                                            <img class="has-background-corail is-img-travels" src="~/assets/images/travels/indonesia.jpg" alt="Indonesia">
                                         </figure>
                                     </article>
                                 </div>
@@ -31,7 +31,7 @@
                                 <div class="column">
                                     <article class="tile is-child">
                                         <figure class="image is-clipped is-3by2">
-                                            <img class="has-background-corail is-img-travels" src="/travels/philippines.jpg" alt="Philippines">
+                                            <img class="has-background-corail is-img-travels" src="~/assets/images/travels/philippines.jpg" alt="Philippines">
                                         </figure>
                                     </article>
                                 </div>
@@ -39,43 +39,10 @@
                         </div>
                         <div class="column is-half-desktop is-half-tablet is-half-mobile">
                             <figure class="image is-clipped has-fullheight">
-                                <img class="has-background-corail is-img-travels has-fullheight" src="/travels/japan.jpg" alt="Japan">
+                                <img class="has-background-corail is-img-travels has-fullheight" src="~/assets/images/travels/japan.jpg" alt="Japan">
                             </figure>
                         </div>
                     </div>
-                  <!--  <div class="tile is-ancestor">
-                        <div class="tile is-vertical">
-                            <div class="tile">
-                                <div class="tile is-vertical is-parent">
-                                    <div class="columns is-mobile">
-                                        <div class="column">
-                                            <article class="tile is-child">
-                                                <figure class="image is-clipped is-2by3">
-                                                    <img class="has-background-corail is-img-travels is-cursor-hand" @click="isModalActive = true" src="/travels/indonesia.jpg" alt="Indonesia">
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                    <div class="columns is-mobile">
-                                        <div class="column">
-                                            <article class="tile is-child">
-                                                <figure class="image is-clipped is-3by2">
-                                                    <img class="has-background-corail is-img-travels is-cursor-hand" @click="isModalActive = true" src="/travels/philippines.jpg" alt="Philippines">
-                                                </figure>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tile is-parent">
-                                    <article class="tile is-child">
-                                        <figure class="image is-clipped has-fullheight">
-                                            <img class="has-background-corail is-img-travels is-cursor-hand has-fullheight" @click="isModalActive = true" src="/travels/japan.jpg" alt="Japan">
-                                        </figure>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -84,9 +51,17 @@
 
 <script>    
     export default {
+        head () {
+            return {
+                title: 'Damien - webdesigner',
+                meta: [
+                    { hid: 'description', name: 'description', content: 'One of my hobby is to travel, espacially in Asia.' }
+                ]
+            }
+        },
         data() {
             return {
-                isModalActive: false,
+
             }
         }
     }

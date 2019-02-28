@@ -27,7 +27,7 @@
                     <div class="columns is-skills is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
                         <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-fifth-mobile is-one-third-tablet">
                             <figure class="image is-square is-skill"> <!-- is-clipped -->
-                                <img class="has-background-corail has-padding-1" :src="'/skills/' + skill.img + '.svg'" alt="">
+                                <img class="has-background-corail has-padding-1" :src="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
                                 <div class="is-hover is-align-center">{{ skill.name }}</div>
                             </figure>
                         </div>
@@ -37,7 +37,7 @@
                         <hooper  :settings="hooperSettings">
                             <slide v-for="exp in experiences" :key="exp.id">
                                 <div class="is-overlay-project"></div>
-                                <img class="is-img-experience" :src="'/experiences/' + exp.img + '.jpg'" alt="lund ideon" />
+                                <img class="is-img-experience" :src="require('~/assets/images/experiences/' + exp.img + '.jpg')" :alt="exp.img" />
                                 <div class="is-agence-name has-text-weight-semibold has-padding-left-1">
                                     <h3 class="has-text-weight-semibold">
                                         {{ exp.name }}
@@ -70,6 +70,14 @@
             Hooper,
             Slide,
             HooperNavigation
+        },
+        head () {
+            return {
+                title: 'Damien - webdesigner',
+                meta: [
+                    { hid: 'description', name: 'description', content: 'Web designer lover, making also front-end design and a bit back-end.' }
+                ]
+            }
         },
         data() {
             return {
