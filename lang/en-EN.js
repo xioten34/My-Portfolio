@@ -45,4 +45,19 @@ export default {
                     I also realize some logo, documents. I am currently freelancing since the end of my last project in Sweden, 
                     but I am looking for a post as a web designer.`
     },
+    'contact': 'Contact',
+    'contact_jp': '',
+    'me': 'Me',
+    'footer': {
+      'text_1': 'Portfolio ',
+      'text_2': 'by ',
+      'text_3': '',
+      'text_4': 'The source code can be find on ',
+      'text_5': ''
+    },
+    'error': {
+      'first': 'Oups ! nothing here',
+      'second': 'Oups an error',
+      'third': 'Come back to home.',
+    }
 }
