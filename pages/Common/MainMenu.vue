@@ -6,11 +6,20 @@
                     <img src="~assets/images/svg/logo/logo.svg">
                 </a>
                 <div class="navbar-item font-noto-jp-black">{{ $t('home.name') }} <span class="has-text-corail">.</span></div>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+                <div :class="['navbar-burger ', showNavMobile ? 'active' : '']" @click="showNavMobile = !showNavMobile">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom">LANG</span>
+                </div>
+            </div>
+            <div :class="['overlay-mobile ', showNavMobile ? 'is-open' : '']">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('fr')">Français</nuxt-link></li>
+                        <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('en')">English</nuxt-link></li>
+                        <li><nuxt-link :to="switchLocalePath('ja')">日本語</nuxt-link></li>
+                    </ul>
+                </nav>
             </div>
             <div class="navbar-menu">
                <!-- <div class="navbar-start">
@@ -36,7 +45,7 @@
     export default {
         data() {
             return {
-               
+               showNavMobile: false,
             }
         },
         methods: {

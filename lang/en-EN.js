@@ -27,11 +27,14 @@ export default {
       'travels': `I take my inspiration from travels`
     },
     'text': {
-      'about_1': `I'm interested by a lot of thing around the web, espacially webdesign, but i can also coding as front-end but sometime using php but infortunaltly not my speciallity. 
-                I started to work by myself as freelancer but finallly i looked for a job in company after came back school. I work for a french company and also Swedish startup.`,
+      'about_1': `I love everything related to the web espacially web design. 
+                  Front-end developement is also important for me, to be able to realize what i designed. 
+                  So I have skills in web design but also in development front, seo etc. I am also interested in video, photo and illustration.`,
       'about_2': `Currently looking for a job in Japan.`,
-      'about_3': ``,
-      'travels': `I love to travel espacially in Asia, my favorite country is Japan, as you can see my portfolio is a bit inspired by it.`
+      'about_3': `Indeed, currently freelance since my last position in Sweden, I am looking for a web designer position in Japan if possible or in Asia such as Taiwan.`,
+      'travels': `Traveling is one of my passions even though I have not visited many countries. I lived in Japan for 1 year and came back there 5 times. 
+                  I visited some places like Tokyo, Kyoto, Nara, Osaka, Tottori, Hiroshima, etc. I plan to do a blog section on my portfolio, with some photos, videos and some tips. 
+                  I then lived for a few months in Philippines (Manila) and also in Indonesia where I currently live, based in Jakarta.`
     },
     'experiences': {
       'memlin': `During 10 months, with my team, we worked on a project to create a new event management software. The goal was to remake the entire design, 

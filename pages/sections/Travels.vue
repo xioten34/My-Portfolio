@@ -2,7 +2,7 @@
     <section id="travels">
         <div class="container has-margin-y-12 has-padding-left-1-tablet">
             <div class="columns">
-                <div class="column is-4 is-flex">
+                <div class="column is-4 is-offset-1 is-flex">
                     <section class="has-fullheight has-padding-x-2-mobile">
                         <div>
                             <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.travels') }}<span class="has-text-corail">.</span></span>
@@ -53,7 +53,7 @@
     export default {
         head () {
             return {
-                title: 'Damien - webdesigner',
+                title: 'Travels | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'One of my hobby is to travel, espacially in Asia.' }
                 ]

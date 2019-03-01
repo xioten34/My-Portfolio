@@ -1,13 +1,13 @@
 <template>
     <section id="works">
         <modal v-show="isModalActive" @close="isModalActive = false">
-            <p slot="image-modal" :class="'image ' + this.currentWork.size">
+            <p slot="content-modal" :class="'image ' + this.currentWork.size">
                 <img class="img-modal" :src="this.currentWork.img" :alt="this.currentWork.name">
             </p>
         </modal>
         <div class="container has-margin-top-12 has-margin-bottom-6 has-padding-left-1-tablet">
             <div class="columns">
-                <div class="column is-5 is-flex">
+                <div class="column is-5 is-offset-1 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
                             <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.portfolio') }}<span class="has-text-corail">.</span></span>
@@ -21,7 +21,7 @@
         </div>
         <div class="container has-padding-x-2-mobile has-padding-left-1-tablet has-margin-bottom-12">
             <div class="columns">
-                <div class="column is-10 is-flex">
+                <div class="column is-10 is-offset-1 is-flex">
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical">
                             <div class="tile">
@@ -61,7 +61,7 @@
         },
         head () {
             return {
-                title: 'Damien - webdesigner',
+                title: 'Works | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'Some of my web design and graphic design work' }
                 ]

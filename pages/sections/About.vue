@@ -2,7 +2,7 @@
     <section id="about">
         <div class="container has-margin-y-12 has-padding-left-1-tablet">
             <div class="columns">
-                <div class="column is-4 is-flex">
+                <div class="column is-4 is-offset-1 is-flex">
                     <section class="has-fullheight has-padding-2-mobile">
                         <div>
                             <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.about') }}<span class="has-text-corail">.</span></span>
@@ -18,7 +18,7 @@
                             <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
                                 {{ $t('text.about_3') }}
                             </p>
-                            <a href="#" class="button has-no-border has-background-corail has-margin-top-2">My resume <fa-icon class="has-margin-left-1" :icon="['fa', 'file-pdf']" /></a>
+                            <a href="/cv_damien.pdf" target="_blank" class="button has-no-border has-background-corail has-margin-top-2">My resume <fa-icon class="has-margin-left-1" :icon="['fa', 'file-pdf']" /></a>
                         </div>
                     </section>
                 </div>
@@ -73,7 +73,7 @@
         },
         head () {
             return {
-                title: 'Damien - webdesigner',
+                title: 'About me | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'Web designer lover, making also front-end design and a bit back-end.' }
                 ]

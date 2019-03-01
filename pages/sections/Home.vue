@@ -1,10 +1,10 @@
 <template>
-    <section class="container has-margin-y-5" id="home">
+    <section class="container has-margin-y-5 has-padding-y-1" id="home">
         <div class="columns">
             <div class="column has-text-centered is-5 is-offset-1">
                 <img class="img-face" src="~/assets/images/svg/element/portrait.svg" />
             </div>
-            <div class="column is-4 is-mobile is-flex">
+            <div class="column is-5 is-mobile is-flex">
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
                         <h1 class="title is-size-1 font-noto-jp-black is-uppercase">
@@ -24,7 +24,7 @@
     export default {
         head () {
             return {
-                title: 'Damien - webdesigner',
+                title: 'Home | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'Thinking, Loving & Making Web design' }
                 ]
