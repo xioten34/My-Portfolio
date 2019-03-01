@@ -4,7 +4,7 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
 
- /* router: {
+  /* router: {
     base: '/portfolio-test/'
   }, */
 
@@ -73,8 +73,34 @@ module.exports = {
       lazy: true,
       langDir: 'lang/',
       defaultLocale: 'en',
-    }]
+    }],
+    '@nuxtjs/sitemap'
   ],
+
+
+  /**
+  *  SiteMap
+  */
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://wwww.damien-webdesign.me',
+    cacheTime: 1000 * 60 * 15,
+    gzip: true,
+    exclude: [
+      '/secret',
+      '/admin/**'
+    ],
+    routes: [
+      '/page/1',
+      {
+        url: '/page/2',
+        changefreq: 'daily',
+        priority: 1,
+        lastmodISO: '2017-06-30T13:30:00.000Z'
+      }
+    ]
+  },
+
 
   /*
   ** Build configuration
