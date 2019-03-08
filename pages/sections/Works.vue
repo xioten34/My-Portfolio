@@ -27,8 +27,8 @@
                             <div class="tile">
                                 <div class="tile is-parent">
                                     <article class="tile is-child">
-                                        <figure class="image is-clipped is-square">
-                                            <img class="has-background-corail is-cursor-hand" :src="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
+                                        <figure v-lazyload class="image is-clipped is-square">
+                                            <img class="has-background-corail is-cursor-hand" :data-url="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
                                         </figure>
                                     </article>
                                 </div>
@@ -36,8 +36,8 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-one-third-desktop is-one-third-tablet is-one-third-mobile">
                                             <article class="tile is-child">
-                                                <figure class="image is-clipped is-square">
-                                                    <img class="has-background-corail is-cursor-hand" :src="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
+                                                <figure v-lazyload class="image is-clipped is-square">
+                                                    <img class="has-background-corail is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
                                                 </figure>
                                             </article>
                                         </div>
@@ -61,7 +61,7 @@
         },
         head () {
             return {
-                title: 'Works | Damien',
+                title: 'Web design | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'Some of my web design and graphic design work' }
                 ]

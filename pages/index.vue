@@ -14,11 +14,11 @@
             </p>
         </section> -->
         <footer class="footer">
-            <div class="content is-size-2 has-text-weight-semibold has-text-centered">
-                <p>
+            <no-ssr>
+                <h2 class="content is-size-2 has-text-weight-semibold has-text-centered">
                     {{ $t('contact') }} <a class="has-text-corail" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a>{{ $t('contact_jp') }}<span class="has-text-corail">.</span>
-                </p>
-            </div>
+                </h2>
+            </no-ssr>
             <div class="content has-text-centered">
                 <p>
                     <strong>{{ $t('footer.text_1') }}</strong>{{ $t('footer.text_2') }}<a class="has-text-corail" href="https://www.linkedin.com/in/damien-jaillot">Damien Jaillot</a>{{ $t('footer.text_3') }}. {{ $t('footer.text_4') }}<a class="has-text-corail" href="https://github.com/xioten34">Github</a>{{ $t('footer.text_5') }}.

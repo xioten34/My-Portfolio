@@ -21,8 +21,8 @@
                             <div class="columns">
                                 <div class="column">
                                     <article class="tile is-child">
-                                        <figure class="image is-clipped is-2by3">
-                                            <img class="has-background-corail is-img-travels" src="~/assets/images/travels/indonesia.jpg" alt="Indonesia">
+                                        <figure v-lazyload class="image is-clipped is-2by3">
+                                            <img class="has-background-corail is-img-travels" :data-url="require('~/assets/images/travels/indonesia.jpg')" alt="Indonesia">
                                         </figure>
                                     </article>
                                 </div>
@@ -30,16 +30,16 @@
                             <div class="columns">
                                 <div class="column">
                                     <article class="tile is-child">
-                                        <figure class="image is-clipped is-3by2">
-                                            <img class="has-background-corail is-img-travels" src="~/assets/images/travels/philippines.jpg" alt="Philippines">
+                                        <figure v-lazyload class="image is-clipped is-3by2">
+                                            <img class="has-background-corail is-img-travels" :data-url="require('~/assets/images/travels/philippines.jpg')" alt="Philippines">
                                         </figure>
                                     </article>
                                 </div>
                             </div>
                         </div>
                         <div class="column is-half-desktop is-half-tablet is-half-mobile">
-                            <figure class="image is-clipped has-fullheight">
-                                <img class="has-background-corail is-img-travels has-fullheight" src="~/assets/images/travels/japan.jpg" alt="Japan">
+                            <figure v-lazyload class="image is-clipped has-fullheight">
+                                <img class="has-background-corail is-img-travels has-fullheight"  :data-url="require('~/assets/images/travels/japan.jpg')" alt="Japan">
                             </figure>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
     export default {
         head () {
             return {
-                title: 'Travels | Damien',
+                title: 'Web design | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'One of my hobby is to travel, espacially in Asia.' }
                 ]

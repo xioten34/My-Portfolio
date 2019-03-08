@@ -26,35 +26,39 @@
                     <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_1') }}<span class="has-text-corail">.</span></div>
                     <div class="columns is-skills is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
                         <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-fifth-mobile is-one-third-tablet">
-                            <figure class="image is-square is-skill"> <!-- is-clipped -->
-                                <img class="has-background-corail has-padding-1" :src="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
+                            <figure v-lazyload class="image is-square is-skill"> <!-- is-clipped -->
+                                <img class="has-background-corail has-padding-1" :data-url="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
                                 <div class="is-hover is-align-center">{{ skill.name }}</div>
                             </figure>
                         </div>
                     </div>
                     <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_2') }}<span class="has-text-corail">.</span></div>
                     <div class="columns is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile is-clipped has-padding-left-20px">
-                        <hooper  :settings="hooperSettings">
-                            <slide v-for="exp in experiences" :key="exp.id">
-                                <div class="is-overlay-project"></div>
-                                <img class="is-img-experience" :src="require('~/assets/images/experiences/' + exp.img + '.jpg')" :alt="exp.img" />
-                                <div class="is-agence-name has-text-weight-semibold has-padding-left-1">
-                                    <h3 class="has-text-weight-semibold">
-                                        {{ exp.name }}
+                        <no-ssr>
+                            <hooper :settings="hooperSettings">
+                                <slide v-for="exp in experiences" :key="exp.id">
+                                    <div class="is-agence-name has-text-weight-semibold has-padding-left-1">
+                                        <h3 class="has-text-weight-semibold">
+                                            {{ exp.name }}
+                                        </h3>
+                                        <h4 class="has-text-weight-light is-size-7 is-italic">
+                                            {{ exp.date }}
+                                        </h4>
+                                    </div>
+                                    <h3 class="is-location has-padding-left-1">
+                                        {{ exp.location }}
                                     </h3>
-                                    <h4 class="has-text-weight-light is-size-7 is-italic">
-                                        {{ exp.date }}
-                                    </h4>
-                                </div>
-                                <h3 class="is-location has-padding-left-1">
-                                    {{ exp.location }}
-                                </h3>
-                                <NuxtLink :to="localePath({ name: 'info', params: { info: exp.name }})">
-                                    <a class="button has-no-border has-background-corail">More</a>
-                                </NuxtLink>
-                            </slide>
-                            <hooper-navigation slot="hooper-addons"></hooper-navigation>
-                        </hooper>
+                                    <NuxtLink :to="localePath({ name: 'info', params: { info: exp.name }})">
+                                        <a class="button has-no-border has-background-corail">More</a>
+                                    </NuxtLink>
+                                    <div class="is-overlay-project"></div>
+                                    <figure class="has-fullheight" v-lazyload>
+                                        <img class="is-img-experience" :data-url="require('~/assets/images/experiences/' + exp.img + '.jpg')" :alt="exp.img" />
+                                    </figure>
+                                </slide>
+                                <hooper-navigation slot="hooper-addons"></hooper-navigation>
+                            </hooper>
+                        </no-ssr>
                     </div>
                 </div>
             </div>
@@ -73,7 +77,7 @@
         },
         head () {
             return {
-                title: 'About me | Damien',
+                title: 'Web design | Damien',
                 meta: [
                     { hid: 'description', name: 'description', content: 'Web designer lover, making also front-end design and a bit back-end.' }
                 ]
