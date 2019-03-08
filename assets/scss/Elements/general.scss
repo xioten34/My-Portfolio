@@ -21,6 +21,12 @@
         }
     }
 }
+.is-button-next {
+    padding: 0.5rem 1rem;
+    background-color: $corail;
+    border-radius: 50%;
+    color: $white !important;
+}
 .nuxt-link-exact-active {
     color: $corail !important;
 }
