@@ -4,7 +4,7 @@ const pkg = require('./package')
 module.exports = {
   mode: 'spa',
 
-  /* router: {
+ /* router: {
     base: '/portfolio-test/'
   }, */
 
@@ -12,7 +12,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'damien | Web design',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +20,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans:bold,thin|Noto+Sans+JP:black,bold,thin' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:black,bold,thin' },
     ]
   },
 
@@ -41,7 +41,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/fontawesome.js'
+    '~/plugins/fontawesome.js',
+    '~/plugins/directives.js'
   ],
 
   /*
@@ -86,19 +87,11 @@ module.exports = {
     hostname: 'https://wwww.damien-webdesign.me',
     cacheTime: 1000 * 60 * 15,
     gzip: true,
+    generate: true,
     exclude: [
       '/secret',
       '/admin/**'
     ],
-    routes: [
-      '/page/1',
-      {
-        url: '/page/2',
-        changefreq: 'daily',
-        priority: 1,
-        lastmodISO: '2017-06-30T13:30:00.000Z'
-      }
-    ]
   },
 
 
@@ -113,6 +106,7 @@ module.exports = {
         }
       }
     },
+
     /*
     ** You can extend webpack config here
     */
