@@ -11,6 +11,7 @@ export default {
       'name': `ダミアン`,
       'subtitle_1': `Thinking, Loving & Making`,
       'subtitle_2': `Webdesign`,
+      'next': '次に見る'
     },
     'title': {
       'about': 'およそ',

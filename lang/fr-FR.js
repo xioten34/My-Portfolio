@@ -11,6 +11,7 @@ export default {
       'name': `Damien`,
       'subtitle_1': `Thinking, Loving & Making`,
       'subtitle_2': `Webdesign`,
+      'next': 'Voir la suite'
     },
     'title': {
       'about': 'A Propos',
