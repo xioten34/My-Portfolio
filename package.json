@@ -11,22 +11,23 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.15",
-    "@fortawesome/free-brands-svg-icons": "^5.7.2",
-    "@fortawesome/free-solid-svg-icons": "^5.7.2",
-    "@fortawesome/vue-fontawesome": "^0.1.5",
-    "@nuxtjs/bulma": "^1.2.1",
-    "@nuxtjs/sitemap": "^0.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@nuxtjs/bulma": "^1.2.4",
+    "@nuxtjs/sitemap": "^0.2.2",
     "cross-env": "^5.2.0",
-    "hooper": "0.0.8",
-    "nuxt": "^2.4.0",
+    "event-source-polyfill": "^1.0.7",
+    "hooper": "^0.3.1",
+    "nuxt": "^2.8.1",
     "nuxt-fontawesome": "^0.4.0",
-    "nuxt-i18n": "^5.8.1"
+    "nuxt-i18n": "^5.12.7"
   },
   "devDependencies": {
-    "css-loader": "^2.1.0",
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.9",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
     "sass-loader": "^7.1.0"
   }
 }
