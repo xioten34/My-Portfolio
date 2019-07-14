@@ -31,6 +31,9 @@
                 <a href="https://github.com/xioten34" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'github']" /></a>
                 <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
             </div>
+            <div class="content has-text-centered">
+                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-corail">{{ $t('footer.mentions') }}</a>
+            </div>
         </footer>
     </div>
 </template>
