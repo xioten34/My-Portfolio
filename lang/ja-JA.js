@@ -32,7 +32,8 @@ export default {
                   写真とかヴィデオとかイラストも好き`,
       'about_2': `今日本で仕事を探します.　私は日本語で下手ですけど英語も使ていいです`,
       'about_3': ``,
-      'travels': `旅行かとっても好き, 日本は一番です,　一年間住んでいましたでもインドネシアとフィリピンも行きました.　今インドネシアに住んでいます, ジャカルタにいます.`
+      'travels': `旅行かとっても好き, 日本は一番です,　一年間住んでいましたでもインドネシアとフィリピンも行きました.　今インドネシアに住んでいます, ジャカルタにいます.`,
+      'resume': '履歴書'
     },
     'experiences': {
       'memlin': `During 10 months, with my team, we worked on a project to create a new event management software. The goal was to remake the entire design, 
@@ -54,7 +55,8 @@ export default {
       'text_2': '',
       'text_3': 'による',
       'text_4': 'ソースコードは',
-      'text_5': 'にあります'
+      'text_5': 'にあります',
+      'mentions': '法的通知'
     },
     'error': {
       'first': 'どこにいるよ?',

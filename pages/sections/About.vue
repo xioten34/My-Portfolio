@@ -18,7 +18,7 @@
                             <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
                                 {{ $t('text.about_3') }}
                             </p>
-                            <a href="/cv_damien.pdf" target="_blank" class="button has-no-border has-background-corail has-margin-top-2">My resume <fa-icon class="has-margin-left-1" :icon="['fa', 'file-pdf']" /></a>
+                            <a href="/cv_damien.pdf" target="_blank" class="button has-no-border has-background-corail has-margin-top-2">{{ $t('text.resume') }} <fa-icon class="has-margin-left-1" :icon="['fa', 'file-pdf']" /></a>
                         </div>
                     </section>
                 </div>

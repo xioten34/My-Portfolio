@@ -28,14 +28,14 @@ export default {
       'travels': `Je prends l'inspiration de mes voyages`
     },
     'text': {
-      'about_1': `Je suis un passionné par tout ce qui touche au web en ayant une préférence pour le design. Le développement, notamment le front est aussi important pour moi,
+      'about_1': `Je suis passionné par tout ce qui touche au web en ayant une préférence pour le design. Le développement, notamment le front est aussi important pour moi,
                   pour pouvoir réaliser et mettre en place ce que j'ai imaginé. J'ai donc des compétences en web design mais aussi en développement front, seo etc. Je suis aussi
                   intéressé par la vidéo, la photo ainsi que l'illustration.`,
-      'about_2': `Actuellement en recherche d'emploi au Japon.`,
-      'about_3': `En effet, actuellement en freelance depuis mon dernier poste en Suède, je cherche un poste de web designer au Japon si possible ou en Asie tel que Taiwan.`,
-      'travels': `Voyager est l'une de mes passions même si je n'ai pas visité beaucoup de pays. J'ai vécu au Japon durant 1 année et y suis retourné 5 fois. J'ai visité quelques lieux
-                  comme Tokyo, Kyoto, Nara, Osaka, Tottori, Hiroshima, etc. Je prévois plus-tard de faire une section blog sur mon portfolio, avec quelques photos, vidéos et quelques conseils.
-                  J'ai ensuite vécu durant quelques mois aux Philippines à Manille ainsi qu'en Indonésie où je vis actuellement, basé à Jakarta`
+      'about_2': `Actuellement en recherche d'emploi au Quebec.`,
+      'about_3': `En effet, actuellement en freelance depuis mon dernier poste en Suède, je cherche un poste de web designer au Quebec si possible ou en Asie tel que le Japon.`,
+      'travels': `Voyager est l'une de mes passions même si je n'ai pas visité beaucoup de pays. J'ai vécu au Japon durant 1 année. 
+                  J'ai ensuite vécu durant quelques mois aux Philippines à Manille ainsi qu'en Indonésie où je vis actuellement, basé à Jakarta`,
+      'resume': 'CV'
     },
     'experiences': {
       'memlin': `Durant 10 mois, avec mon équipe, nous avons travaillé sur un projet de création 
@@ -66,7 +66,8 @@ export default {
       'text_2': 'par ',
       'text_3': '',
       'text_4': 'Le code source est disponible sur ',
-      'text_5': ''
+      'text_5': '',
+      'mentions': 'Mentions Légales'
     },
     'error': {
       'first': 'Oups ! rien ici',

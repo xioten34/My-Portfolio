@@ -73,7 +73,7 @@
                 firstWork: {
                     name: 'UI design',
                     type: 'ui-design',
-                    img: 'event',
+                    img: 'find_your_room',
                     size: 'is-4by3'
                 },
                 works: [
@@ -96,9 +96,9 @@
                         size: 'is-4by3'
                     },
                     {
-                        name: 'My illustration',
-                        type: 'illustration',
-                        img: 'damien',
+                        name: 'ui-design',
+                        type: 'ui-design',
+                        img: 'payment method',
                         size: 'is-4by3'
                     },
                     {
@@ -128,7 +128,7 @@
                     {
                         name: 'ui-design',
                         type: 'ui-design',
-                        img: 'security',
+                        img: 'event',
                         size: 'is-4by3'
                     }                    
                 ],
