@@ -17,7 +17,6 @@
                     <ul>
                         <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('fr')">Français</nuxt-link></li>
                         <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('en')">English</nuxt-link></li>
-                        <li><nuxt-link :to="switchLocalePath('ja')">日本語</nuxt-link></li>
                     </ul>
                 </nav>
             </div>
@@ -31,7 +30,6 @@
                 <div class="navbar-end lang">
                     <nuxt-link class="navbar-item" :to="switchLocalePath('fr')">Français</nuxt-link>
                     <nuxt-link class="navbar-item" :to="switchLocalePath('en')">English</nuxt-link>
-                    <nuxt-link class="navbar-item" :to="switchLocalePath('ja')">日本語</nuxt-link>
                     <!-- <span class="navbar-item">
                         <a href="#" class="button has-no-border has-background-corail">{{ $t('menu[\'contact\']') }}</a>
                     </span> -->

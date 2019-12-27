@@ -32,34 +32,6 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_2') }}<span class="has-text-corail">.</span></div>
-                    <div class="columns is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile is-clipped has-padding-left-20px">
-                        <no-ssr>
-                            <hooper :settings="hooperSettings">
-                                <slide v-for="exp in experiences" :key="exp.id">
-                                    <div class="is-agence-name has-text-weight-semibold has-padding-left-1">
-                                        <h3 class="has-text-weight-semibold">
-                                            {{ exp.name }}
-                                        </h3>
-                                        <h4 class="has-text-weight-light is-size-7 is-italic">
-                                            {{ exp.date }}
-                                        </h4>
-                                    </div>
-                                    <h3 class="is-location has-padding-left-1">
-                                        {{ exp.location }}
-                                    </h3>
-                                    <NuxtLink :to="localePath({ name: 'info', params: { info: exp.name }})">
-                                        <a class="button has-no-border has-background-corail">More</a>
-                                    </NuxtLink>
-                                    <div class="is-overlay-project"></div>
-                                    <figure class="has-fullheight" v-lazyload>
-                                        <img class="is-img-experience" :data-url="require('~/assets/images/experiences/' + exp.img + '.jpg')" :alt="exp.img" />
-                                    </figure>
-                                </slide>
-                                <hooper-navigation slot="hooper-addons"></hooper-navigation>
-                            </hooper>
-                        </no-ssr>
-                    </div>
                 </div>
             </div>
         </div>
@@ -67,14 +39,8 @@
 </template>
 
 <script>
-    import { Hooper, Slide, Navigation as HooperNavigation } from 'hooper';
-
     export default {
-        components: {
-            Hooper,
-            Slide,
-            HooperNavigation
-        },
+        components: {},
         head () {
             return {
                 title: 'Web design | Damien',
@@ -85,9 +51,6 @@
         },
         data() {
             return {
-                hooperSettings: {
-                    itemsToShow: 1.5,
-                },
                 isModalActive: false,
                 skills: [
                     {

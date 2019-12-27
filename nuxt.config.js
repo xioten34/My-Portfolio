@@ -64,16 +64,10 @@ module.exports = {
           iso: 'en-EN',
           file: 'en-EN.js'
         },
-        {
-          name: '日本語',
-          code: 'ja',
-          iso: 'ja-JA',
-          file: 'ja-JA.js'
-        },
       ],
       lazy: true,
       langDir: 'lang/',
-      defaultLocale: 'en',
+      defaultLocale: 'fr',
     }],
     '@nuxtjs/sitemap'
   ],
