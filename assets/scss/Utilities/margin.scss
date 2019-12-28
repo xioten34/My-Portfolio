@@ -248,6 +248,11 @@ $base: $utility-base;
   margin-bottom: $base * 6.5 !important;
 }
 
+.has-margin-x-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .has-margin-x-1 {
   margin-left: $base !important;
   margin-right: $base !important;

@@ -1,21 +1,29 @@
 <template>
-    <section class="container has-margin-y-5 has-padding-y-1" id="home">
+    <section class="container" id="home">
         <div class="columns">
-            <div class="column has-text-centered is-5 is-offset-1">
-                <img class="img-face" src="~/assets/images/svg/element/portrait.svg" />
-            </div>
-            <div class="column is-5 is-mobile is-flex">
+            <div class="column is-6 has-text-left">
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
-                        <h1 class="title is-size-1 font-noto-jp-black is-uppercase">
+                        <span class="is-size-4">Hello,</span>
+                        <h1 class="title is-font-size-6">
                             {{ $t('home.name') }}<span class="has-text-corail">.</span>
                         </h1>
-                        <h2 class="subtitle is-size-3 font-noto-jp-thin has-text-corail">
-                            {{ $t('home.subtitle_1') }}<br><strong class="font-noto-jp-thin has-text-corail">{{ $t('home.subtitle_2') }}</strong>
+                        <h2 class="subtitle is-font-size-3-5 has-margin-y-1">
+                            {{ $t('home.subtitle_1') }} {{ $t('home.subtitle_2') }}
                         </h2>
-                        <p class="has-margin-top-8 has-text-corail">{{ $t('home.next') }} <i class="is-button-next has-margin-left-1"><fa-icon :icon="['fa', 'long-arrow-alt-down']" /></i></p>
+                        <div class="is-cta columns has-margin-x-0 has-margin-y-6">
+                            <a class="column is-6 is-cta-contact has-text-centered">
+                                Contact me
+                            </a>
+                            <a class="column is-6 is-cta-resume has-text-centered">
+                                My Resume
+                            </a>
+                        </div>
                     </div>
                 </section>
+            </div>
+            <div class="column is-6 has-text-right">
+                <img class="img-face" src="~/assets/images/home/portrait.png" />
             </div>
         </div>
     </section>

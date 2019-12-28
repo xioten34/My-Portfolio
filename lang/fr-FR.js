@@ -8,10 +8,10 @@ export default {
       'contact': 'Contact'
     },
     'home': {
-      'name': `Damien`,
-      'subtitle_1': `Thinking, Loving & Making`,
-      'subtitle_2': `Webdesign`,
-      'next': 'Voir la suite'
+      'name': `I'm Damien Jaillot`,
+      'subtitle_1': `French UI/UX Designer &`,
+      'subtitle_2': `Front-End Developer`,
+      // 'next': 'Voir la suite'
     },
     'title': {
       'about': 'A Propos',

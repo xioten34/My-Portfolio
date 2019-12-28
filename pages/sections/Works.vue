@@ -21,56 +21,6 @@
         </div>
         <div class="container has-padding-x-2-mobile has-padding-left-1-tablet has-margin-bottom-12">
             <div class="columns">
-                <div class="column is-4 is-offset-1">
-                    <h3 class="has-text-weight-semibold">{{ $t('main_title.portfolio_detail_sub_1') }}<span class="has-text-corail">.</span></h3>
-                    <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
-                        {{ $t('portfolio_detail.presentation') }}
-                    </p>
-                </div>
-                <div class="column is-5 is-offset-1">
-                    <figure v-lazyload class="image is-clipped is-square">
-                        <img class="has-background-corail is-cursor-hand" :data-url="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
-                    </figure>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column is-4 is-offset-1">
-
-                </div>
-                <div class="column is-5 is-offset-1">
-                    <h3 class="has-text-weight-semibold">{{ $t('main_title.portfolio_detail_sub_2') }}<span class="has-text-corail">.</span></h3>
-                    <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
-                        {{ $t('portfolio_detail.projet') }}
-                    </p>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column is-4 is-offset-1">
-                    <h3 class="has-text-weight-semibold">{{ $t('main_title.portfolio_detail_sub_3') }}<span class="has-text-corail">.</span></h3>
-                    <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
-                        {{ $t('portfolio_detail.solution') }}
-                    </p>
-                </div>
-                <div class="column is-5 is-offset-1">
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container has-margin-top-12 has-margin-bottom-6 has-padding-left-1-tablet">
-            <div class="columns">
-                <div class="column is-5 is-offset-1 is-flex">
-                    <section class="has-fullheight has-padding-left-2-mobile">
-                        <div>
-                            <h2 class="title has-text-weight-bold has-margin-top-2">
-                                {{ $t('main_title.portfolio') }}<span class="has-text-corail">.</span>
-                            </h2>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <div class="container has-padding-x-2-mobile has-padding-left-1-tablet has-margin-bottom-12">
-            <div class="columns">
                 <div class="column is-10 is-offset-1 is-flex">
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical">

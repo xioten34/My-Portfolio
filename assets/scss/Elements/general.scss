@@ -1,11 +1,14 @@
+body {
+    background-color: #EFEEEE;
+}
 .container {
     overflow: hidden !important;
     .img {
         &-face {
-            height: auto;
-            max-width: 90%;
+            max-height: 90%;
             top: 70px;
             left: 20%;
+            border-radius: 10px;
             transition: all 0.2s;
             z-index: 5;
             @media only screen and (max-width: $mobile) {
@@ -14,10 +17,30 @@
         }
     }
     .is-main-title {
-        text-align: right !important;
         flex-grow: 1;
         @media only screen and (max-width: $mobile) {
             text-align: center !important;
+        }
+    }
+    .is-cta {
+        .is-cta {
+            &-contact {
+                border-radius:12px;
+                width:240px;
+                padding: 1.5rem;
+                background-color:#EFEEEE;
+
+                /* Neumorphism */
+                box-shadow: 9px 9px 16px rgba(206,206,206,0.5), -9px -9px 16px rgba(255,255,255, 0.5);
+            }
+            &-resume {
+                border-radius:12px;
+                width:240px;
+                padding: 1.5rem;
+                margin-left: 2rem;
+                background-color:#4B57A1;
+                color: #ffffff;
+            }
         }
     }
 }

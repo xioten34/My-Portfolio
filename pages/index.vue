@@ -4,7 +4,6 @@
         <home />
         <about />
         <works />
-        <travels />
        <!-- <section class="has-fullheight is-icon-list is-align-center has-text-corail">
             <p>
                 <a href="https://www.instagram.com/j.dams" target="_blank"><fa-icon class="has-no-margin-top" :icon="['fab', 'instagram']" /></a>
@@ -43,7 +42,6 @@
     import home from './sections/Home'
     import about from './sections/About'
     import works from './sections/Works'
-    import travels from './sections/Travels'
 
     export default {
         transition: 'modal-fade',
@@ -51,8 +49,7 @@
             mainMenu,
             home,
             about,
-            works,
-            travels
+            works
         }
     }
 </script>
