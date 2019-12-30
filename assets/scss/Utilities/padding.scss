@@ -231,6 +231,16 @@ $base: $utility-base;
   padding-right: $base * 4.5 !important;
 }
 
+.has-padding-x-8 {
+  padding-left: $base * 5 !important;
+  padding-right: $base * 5 !important;
+}
+
+.has-padding-x-9 {
+  padding-left: $base * 5.5 !important;
+  padding-right: $base * 5.5 !important;
+}
+
 .has-padding-x-10 {
   padding-left: $base * 7.5 !important;
   padding-right: $base * 7.5 !important;

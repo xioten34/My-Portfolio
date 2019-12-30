@@ -1,38 +1,34 @@
 <template>
-    <section id="about">
-        <div class="container has-margin-y-12 has-padding-left-1-tablet">
-            <div class="columns">
-                <div class="column is-4 is-offset-1 is-flex">
-                    <section class="has-fullheight has-padding-2-mobile">
-                        <div>
-                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.about') }}<span class="has-text-purple">.</span></span>
-                            <h2 class="title has-text-weight-bold has-margin-top-2">
-                                {{ $t('main_title.about_1') }}<br><span class="has-text-purple">&</span> {{ $t('main_title.about_2') }}<span class="has-text-purple">.</span>
-                            </h2>
-                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-purple">
-                                {{ $t('text.about_1') }}
-                            </p>
-                            <p class="is-size-6 has-text-weight-bold has-text-purple has-margin-y-1">
-                                {{ $t('text.about_2') }}
-                            </p>
-                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-purple">
-                                {{ $t('text.about_3') }}
-                            </p>
-                            <!-- <a href="/cv_damien.pdf" target="_blank" class="button has-no-border has-background-purple has-margin-top-2">{{ $t('text.resume') }} <fa-icon class="has-margin-left-1" :icon="['fa', 'file-pdf']" /></a> -->
-                        </div>
-                    </section>
-                </div>
-                <div class="column is-5 is-offset-1">
-                    <!-- <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_1') }}<span class="has-text-purple">.</span></div> -->
-                    <div class="columns is-skills is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
-                        <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-fifth-mobile is-one-third-tablet">
-                            <figure v-lazyload class="image is-square is-skill"> <!-- is-clipped -->
-                                <img class="has-background-purple has-padding-1" :data-url="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
-                                <div class="is-hover is-align-center">{{ skill.name }}</div>
-                            </figure>
+    <section class="container has-margin-y-10" id="about">
+        <div class="columns">
+            <div class="column is-5">
+                <img class="is-img-about" src="~/assets/images/home/portrait.png" />
+            </div>
+            <div class="column is-6 is-offset-1">
+                <section class="has-fullheight has-padding-2-mobile is-align-center">
+                    <div>
+                        <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.about') }}<span class="has-text-purple">.</span></span>
+                        <h2 class="title has-text-weight-bold has-margin-top-2">
+                            {{ $t('main_title.about_1') }}<br><span class="has-text-purple">&</span> {{ $t('main_title.about_2') }}<span class="has-text-purple">.</span>
+                        </h2>
+                        <p class="is-size-6 has-text-weight-light has-text-purple">
+                            {{ $t('text.about_1') }}
+                        </p>
+                        <p class="is-size-6 has-text-weight-bold has-text-purple has-margin-y-1">
+                            {{ $t('text.about_2') }}
+                        </p>
+                        <p class="is-size-6 has-text-weight-light has-text-purple">
+                            {{ $t('text.about_3') }}
+                        </p>
+                        <div class="columns is-skills is-mobile is-multiline has-margin-top-1">
+                            <div v-for="skill in skills" :key="skill.id" class="column is-narrow">
+                                <figure v-lazyload class="image is-square is-skill"> <!-- is-clipped -->
+                                    <img class="has-background-purple has-padding-1" :data-url="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
+                                </figure>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
