@@ -2,7 +2,7 @@
     <section class="container has-margin-y-10" id="about">
         <div class="columns">
             <div class="column is-5">
-                <img class="is-img-about" src="~/assets/images/home/portrait.png" />
+                <img class="is-img-about" src="~/assets/images/about/portrait-real.jpg" />
             </div>
             <div class="column is-6 is-offset-1">
                 <section class="has-fullheight has-padding-2-mobile is-align-center">
