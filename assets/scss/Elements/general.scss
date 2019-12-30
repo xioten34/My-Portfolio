@@ -25,21 +25,35 @@ body {
     .is-cta {
         .is-cta {
             &-contact {
-                border-radius:12px;
+                border-radius:8px;
                 width:240px;
-                padding: 1.5rem;
-                background-color:#EFEEEE;
-
-                /* Neumorphism */
-                box-shadow: 9px 9px 16px rgba(206,206,206,0.5), -9px -9px 16px rgba(255,255,255, 0.5);
-            }
-            &-resume {
-                border-radius:12px;
-                width:240px;
-                padding: 1.5rem;
-                margin-left: 2rem;
+                padding: 1rem;
                 background-color:#4B57A1;
                 color: #ffffff;
+                transition: all 0.4s ease 0s;
+
+                /* Neumorphism */
+                // background-color:#EFEEEE;
+                // box-shadow: 9px 9px 16px rgba(206,206,206,0.5), -9px -9px 16px rgba(255,255,255, 0.5);
+
+                &:hover {
+                    background-color: #3a447d;
+                    transition: all 0.4s ease 0s;
+                }
+            }
+            &-resume {
+                border-radius:8px;
+                width:240px;
+                padding: 1rem;
+                margin-left: 2rem;
+                border:2px solid #4B57A1;
+                color: #4B57A1;
+                transition: all 0.4s ease 0s;
+                &:hover {
+                    transition: all 0.4s ease 0s;
+                    background-color: #4B57A1;
+                    color: #ffffff;                    
+                }
             }
         }
     }
