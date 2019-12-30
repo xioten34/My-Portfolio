@@ -10,9 +10,9 @@
                 <div class="column is-5 is-offset-1 is-flex">
                     <section class="has-fullheight has-padding-left-2-mobile">
                         <div>
-                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.portfolio') }}<span class="has-text-corail">.</span></span>
+                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.portfolio') }}<span class="has-text-purple">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
-                                {{ $t('main_title.portfolio_detail') }}<span class="has-text-corail">.</span>
+                                {{ $t('main_title.portfolio_detail') }}<span class="has-text-purple">.</span>
                             </h2>
                         </div>
                     </section>
@@ -28,7 +28,7 @@
                                 <div class="tile is-parent">
                                     <article class="tile is-child">
                                         <figure v-lazyload class="image is-clipped is-square">
-                                            <img class="has-background-corail is-cursor-hand" :data-url="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
+                                            <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
                                         </figure>
                                     </article>
                                 </div>
@@ -37,7 +37,7 @@
                                         <div v-for="(work, key) in works" :key="key" class="column is-one-third-desktop is-one-third-tablet is-one-third-mobile">
                                             <article class="tile is-child">
                                                 <figure v-lazyload class="image is-clipped is-square">
-                                                    <img class="has-background-corail is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
+                                                    <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
                                                 </figure>
                                             </article>
                                         </div>

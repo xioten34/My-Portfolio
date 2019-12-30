@@ -28,7 +28,7 @@
         }
     }
     span {
-        background: $corail !important;
+        background: $purple !important;
         width: 21px !important;
         left: auto !important;
         right: calc(50% - 10px) !important;
@@ -46,7 +46,7 @@
 
 .overlay-mobile {
     position: fixed;
-    background: $corail;
+    background: $purple;
     top: 0;
     left: 0;
     width: 100%;
@@ -116,7 +116,7 @@
             a {
                 display: block;
                 position: relative;
-                color: $corail;
+                color: $purple;
                 text-decoration: none;
                 overflow: hidden;
                 
@@ -134,7 +134,7 @@
                     width: 0%;
                     transform: translateX(-50%);
                     height: 3px;
-                    background: $corail;
+                    background: $purple;
                     transition: .35s;
                 }
             }

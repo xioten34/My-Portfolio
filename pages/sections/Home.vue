@@ -6,7 +6,7 @@
                     <div class="is-main-title">
                         <span class="is-size-4">Hello,</span>
                         <h1 class="title is-font-size-6">
-                            {{ $t('home.name') }}<span class="has-text-corail">.</span>
+                            {{ $t('home.name') }}<span class="has-text-purple">.</span>
                         </h1>
                         <h2 class="subtitle is-font-size-3-5 has-margin-y-1">
                             {{ $t('home.subtitle_1') }} {{ $t('home.subtitle_2') }}

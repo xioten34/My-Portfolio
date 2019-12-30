@@ -1,14 +1,14 @@
-.has-text-corail {
-    color: $corail !important;
+.has-text-purple {
+    color: $purple !important;
     a {
-        color: $corail !important;
+        color: $purple !important;
     }
 }
-.has-background-corail {
-    background-color: $corail !important;
+.has-background-purple {
+    background-color: $purple !important;
     color: $white !important;
     &:hover {
-        background-color: $corail-light !important;
+        background-color: $purple-light !important;
         color: $white !important;
     }
 }

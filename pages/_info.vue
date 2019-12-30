@@ -1,5 +1,5 @@
 <template>
-    <div class="d-corail-background has-padding-top-9 has-padding-bottom-3-mobile">
+    <div class="d-purple-background has-padding-top-9 has-padding-bottom-3-mobile">
         <div class="container">
             <div class="columns">
                 <div class="column is-5 is-offset-1 is-flex">

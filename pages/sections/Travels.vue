@@ -5,11 +5,11 @@
                 <div class="column is-4 is-offset-1 is-flex">
                     <section class="has-fullheight has-padding-x-2-mobile">
                         <div>
-                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.travels') }}<span class="has-text-corail">.</span></span>
+                            <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.travels') }}<span class="has-text-purple">.</span></span>
                             <h2 class="title has-text-weight-bold has-margin-top-2">
-                                {{ $t('main_title.travels') }}<span class="has-text-corail">.</span>
+                                {{ $t('main_title.travels') }}<span class="has-text-purple">.</span>
                             </h2>
-                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-corail">
+                            <p class="is-size-6 has-text-weight-light has-text-justified has-text-purple">
                                 {{ $t('text.travels') }}
                             </p>
                         </div>
@@ -22,7 +22,7 @@
                                 <div class="column">
                                     <article class="tile is-child">
                                         <figure v-lazyload class="image is-clipped is-2by3">
-                                            <img class="has-background-corail is-img-travels" :data-url="require('~/assets/images/travels/indonesia.jpg')" alt="Indonesia">
+                                            <img class="has-background-purple is-img-travels" :data-url="require('~/assets/images/travels/indonesia.jpg')" alt="Indonesia">
                                         </figure>
                                     </article>
                                 </div>
@@ -31,7 +31,7 @@
                                 <div class="column">
                                     <article class="tile is-child">
                                         <figure v-lazyload class="image is-clipped is-3by2">
-                                            <img class="has-background-corail is-img-travels" :data-url="require('~/assets/images/travels/philippines.jpg')" alt="Philippines">
+                                            <img class="has-background-purple is-img-travels" :data-url="require('~/assets/images/travels/philippines.jpg')" alt="Philippines">
                                         </figure>
                                     </article>
                                 </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="column is-half-desktop is-half-tablet is-half-mobile">
                             <figure v-lazyload class="image is-clipped has-fullheight">
-                                <img class="has-background-corail is-img-travels has-fullheight"  :data-url="require('~/assets/images/travels/japan.jpg')" alt="Japan">
+                                <img class="has-background-purple is-img-travels has-fullheight"  :data-url="require('~/assets/images/travels/japan.jpg')" alt="Japan">
                             </figure>
                         </div>
                     </div>

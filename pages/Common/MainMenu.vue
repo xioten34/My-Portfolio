@@ -30,7 +30,7 @@
                     <nuxt-link class="navbar-item" :to="switchLocalePath('fr')">FR</nuxt-link>
                     <nuxt-link class="navbar-item" :to="switchLocalePath('en')">EN</nuxt-link>
                     <!-- <span class="navbar-item">
-                        <a href="#" class="button has-no-border has-background-corail">{{ $t('menu[\'contact\']') }}</a>
+                        <a href="#" class="button has-no-border has-background-purple">{{ $t('menu[\'contact\']') }}</a>
                     </span> -->
                 </div>
             </div>
