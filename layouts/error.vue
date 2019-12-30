@@ -1,16 +1,13 @@
 <template>
-    <section class="container has-margin-y-10">
+    <section class="container has-margin-x-0 is-align-center" :style="'background:url(' + backgroundimg + '); background-size: cover'" id="error">
         <div class="columns">
-            <div class="column has-text-centered is-5 is-offset-1">
-                <img class="img-face" src="~/assets/images/svg/element/portrait.svg" />
-            </div>
-            <div class="column is-4 is-mobile is-flex">
-                <section class="has-fullheight is-align-center">
+            <div class="column is-mobile is-flex">
+                <section class="has-fullheight is-align-center has-text-centered">
                     <div class="is-main-title">
-                        <h1 class="title is-size-1 font-noto-jp-black is-uppercase" v-if="error.statusCode === 404">
+                        <h1 class="title is-size-1 is-uppercase has-text-light" v-if="error.statusCode === 404">
                             {{ $t('error.first') }}<span class="has-text-purple">.</span>
                         </h1>
-                        <h1 class="title is-size-1 font-noto-jp-black is-uppercase" v-else>
+                        <h1 class="title is-size-1 is-uppercase has-text-light" v-else>
                             {{ $t('error.second') }}<span class="has-text-purple">.</span>
                         </h1>
                         <nuxt-link to="/">
@@ -26,7 +23,14 @@
 </template>
 
 <script>
+import background from '~/assets/images/svg/element/background.png';
+
 export default {
   props: ['error'],
+   data() {
+        return {
+            backgroundimg: background,
+        }
+   }
 }
 </script>
