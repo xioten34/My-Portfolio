@@ -22,12 +22,11 @@ body {
             text-align: center !important;
         }
     }
-    .is-cta {
-        .is-cta {
+    .buttons {
+        .button {
             &-contact {
-                border-radius:8px;
-                width:240px;
-                padding: 1rem;
+                width:100%;
+                padding: 1.5rem;
                 background-color:#4B57A1;
                 color: #ffffff;
                 transition: all 0.4s ease 0s;
@@ -42,11 +41,10 @@ body {
                 }
             }
             &-resume {
-                border-radius:8px;
-                width:240px;
-                padding: 1rem;
-                margin-left: 2rem;
+                width:100%;
+                padding: 1.5rem;
                 border:2px solid #4B57A1;
+                background-color: transparent;
                 color: #4B57A1;
                 transition: all 0.4s ease 0s;
                 &:hover {

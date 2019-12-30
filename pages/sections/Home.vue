@@ -11,14 +11,18 @@
                         <h2 class="subtitle is-font-size-3-5 has-margin-y-1">
                             {{ $t('home.subtitle_1') }} {{ $t('home.subtitle_2') }}
                         </h2>
-                        <div class="is-cta columns has-margin-x-0 has-margin-y-6">
-                            <a href="mailto:damien.jaillot@gmail.com" class="column is-6 is-cta-contact has-text-centered">
-                                Contact me
-                            </a>
-                            <a href="/cv_damien.pdf" target="_blank" class="column is-6 is-cta-resume has-text-centered">
-                                <fa-icon class="has-margin-right-8px" :icon="['fa', 'file-pdf']" />
-                                My Resume
-                            </a>
+                        <div class="columns buttons has-margin-x-0 has-margin-y-6 is-mobile">
+                            <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
+                                <a href="mailto:damien.jaillot@gmail.com" class="button button-contact">
+                                    Contact me
+                                </a>
+                            </div>
+                            <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
+                                <a href="/cv_damien.pdf" target="_blank" class="button button-resume">
+                                    <fa-icon class="has-margin-right-8px" :icon="['fa', 'file-pdf']" />
+                                    My Resume
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>

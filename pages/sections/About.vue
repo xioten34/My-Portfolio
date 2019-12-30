@@ -23,7 +23,7 @@
                     </section>
                 </div>
                 <div class="column is-5 is-offset-1">
-                    <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_1') }}<span class="has-text-purple">.</span></div>
+                    <!-- <div class="has-padding-left-2 has-text-weight-semibold has-text-grey-dark">{{ $t('title.about_1') }}<span class="has-text-purple">.</span></div> -->
                     <div class="columns is-skills is-multiline is-mobile has-padding-2 has-padding-right-0 has-padding-right-2-mobile">
                         <div v-for="skill in skills" :key="skill.id" class="column is-2-desktop is-one-fifth-mobile is-one-third-tablet">
                             <figure v-lazyload class="image is-square is-skill"> <!-- is-clipped -->
