@@ -24,7 +24,6 @@
                     <nuxt-link class="navbar-item" to="/">{{ $t('menu[\'accueil\']') }}</nuxt-link>
                     <nuxt-link class="navbar-item" to="/#about">{{ $t('menu[\'a propos\']') }}</nuxt-link>
                     <nuxt-link class="navbar-item" to="/#works">{{ $t('menu[\'portfolio\']') }}</nuxt-link>
-                    <nuxt-link class="navbar-item" to="/#travels">{{ $t('menu[\'travel\']') }}</nuxt-link>
                 </div> -->
                 <div class="navbar-end lang">
                     <nuxt-link class="navbar-item" :to="switchLocalePath('fr')">FR</nuxt-link>

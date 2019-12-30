@@ -19,7 +19,6 @@ export default {
       'about_2': `Mes expériences`,
       'experiences': 'Expériences',
       'portfolio': 'Portfolio',
-      'travels': 'Voyages'
     },
     'main_title': {
       'about_1': `J'aime le web design`,
@@ -29,7 +28,6 @@ export default {
       'portfolio_detail_sub_2': `Projet & besoin`,
       'portfolio_detail_sub_3': `Solutions`,
       'portfolio': `Quelques réalisations`,
-      'travels': `Je prends l'inspiration de mes voyages`
     },
     'text': {
       'about_1': `Je suis passionné par tout ce qui touche au web en ayant une préférence pour le design. Le développement, notamment le front est aussi important pour moi,
@@ -37,8 +35,6 @@ export default {
                   intéressé par la vidéo, la photo ainsi que l'illustration.`,
       'about_2': `Actuellement en recherche d'emploi en France, au Quebec ou au Japon.`,
       'about_3': `En effet, actuellement en freelance depuis mon dernier poste en Suède, je cherche un poste de web designer au Quebec si possible ou en Asie tel que le Japon.`,
-      'travels': `Voyager est l'une de mes passions même si je n'ai pas visité beaucoup de pays. J'ai vécu au Japon durant 1 année. 
-                  J'ai ensuite vécu durant quelques mois aux Philippines à Manille ainsi qu'en Indonésie où je vis actuellement, basé à Jakarta`,
       'resume': 'CV'
     },
     'portfolio_detail': {

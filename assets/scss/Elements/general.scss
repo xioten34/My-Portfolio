@@ -6,8 +6,6 @@ body {
     .img {
         &-face {
             max-height: 90%;
-            top: 70px;
-            left: 20%;
             border-radius: 10px;
             transition: all 0.2s;
             z-index: 5;
@@ -56,12 +54,6 @@ body {
         }
     }
 }
-.is-button-next {
-    padding: 0.5rem 1rem;
-    background-color: $purple;
-    border-radius: 50%;
-    color: $white !important;
-}
 .nuxt-link-exact-active {
     color: $purple !important;
 }
@@ -102,14 +94,19 @@ figure {
         border-radius: 5px !important;
     }
 }
+.is-img-about {
+    border-radius: 10px;
+    transition: all 0.2s;
+    z-index: 5;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) {
+        max-width: 250px;
+    }
+}
 .is-img-experience {
     border-radius: 5px;
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover;
-    object-position: center;
-}
-.is-img-travels {
     object-fit: cover;
     object-position: center;
 }
@@ -149,9 +146,12 @@ figure {
     color: #ffffff;
 }
 .is-skills {
-    div:last-child {
+    .image.is-square {
+        padding: 2rem;
+    }
+   /* div:last-child {
         .is-hover {
             display: none !important;
         }
-    }
+    } */
 }

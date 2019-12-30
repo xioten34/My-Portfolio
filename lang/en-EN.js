@@ -19,7 +19,6 @@ export default {
       'about_2': `Experiences`,
       'experiences': 'Experiences',
       'portfolio': 'Portfolio',
-      'travels': 'Travels'
     },
     'main_title': {
       'about_1': `I love webdesign`,
@@ -29,7 +28,6 @@ export default {
       'portfolio_detail_sub_2': `Projet & besoin`,
       'portfolio_detail_sub_3': `Solutions`,
       'portfolio': `Some of my works`,
-      'travels': `I take my inspiration from travels`
     },
     'text': {
       'about_1': `I love everything related to the web espacially web design. 
@@ -37,8 +35,6 @@ export default {
                   So I have skills in web design but also in development front, seo etc. I am also interested in video, photo and illustration.`,
       'about_2': `Currently looking for a job in France, Quebec or Japan.`,
       'about_3': `Indeed, currently freelance since my last position in Sweden, I am looking for a web designer position in Quebec if possible or in Asia such as Japan.`,
-      'travels': `Traveling is one of my passions even though I have not visited many countries. I lived in Japan for 1 year.
-                  I lived for a few months in Philippines (Manila) and also in Indonesia where I currently live, based in Jakarta.`,
       'resume': 'Resume'
     },
     'portfolio_detail': {
