@@ -25,16 +25,9 @@
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical">
                             <div class="tile">
-                                <div class="tile is-parent">
-                                    <article class="tile is-child">
-                                        <figure v-lazyload class="image is-clipped is-square">
-                                            <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + this.firstWork.img + '.png')" :alt="this.firstWork.img" @click="showModalFirst()">
-                                        </figure>
-                                    </article>
-                                </div>
                                 <div class="tile is-vertical is-parent">
                                     <div class="columns is-multiline is-mobile">
-                                        <div v-for="(work, key) in works" :key="key" class="column is-one-third-desktop is-one-third-tablet is-one-third-mobile">
+                                        <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
                                                 <figure v-lazyload class="image is-clipped is-square">
                                                     <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
@@ -78,33 +71,9 @@
                 },
                 works: [
                     {
-                        name: 'Company logo',
-                        type: 'logo',
-                        img: 'logo_up',
-                        size: 'is-4by3'
-                    },
-                    {
-                        name: 'Business card',
-                        type: 'illustration',
-                        img: 'business_card',
-                        size: 'is-4by3'
-                    },
-                    {
-                        name: 'In Leather',
-                        type: 'logo',
-                        img: 'inleather_logo',
-                        size: 'is-4by3'
-                    },
-                    {
                         name: 'ui-design',
                         type: 'ui-design',
                         img: 'payment method',
-                        size: 'is-4by3'
-                    },
-                    {
-                        name: 'Portfolio',
-                        type: 'ui-design',
-                        img: 'portfolio',
                         size: 'is-4by3'
                     },
                     {
@@ -117,12 +86,6 @@
                         name: 'ui-design',
                         type: 'ui-design',
                         img: 'event-spa',
-                        size: 'is-4by3'
-                    },
-                    {
-                        name: 'mobile design',
-                        type: 'ui-design',
-                        img: 'mobile-portfolio',
                         size: 'is-4by3'
                     },
                     {
