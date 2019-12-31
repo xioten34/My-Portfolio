@@ -23,7 +23,7 @@
                         <div class="columns is-skills is-mobile is-multiline has-margin-top-1">
                             <div v-for="skill in skills" :key="skill.id" class="column is-narrow">
                                 <figure v-lazyload class="image is-square is-skill"> <!-- is-clipped -->
-                                    <img class="has-background-purple has-padding-1" :data-url="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.img">
+                                    <img class="has-background-purple has-padding-1" :data-url="require('~/assets/images/skills/' + skill.img + '.svg')" :alt="skill.name" :title="skill.name">
                                 </figure>
                             </div>
                         </div>
@@ -108,26 +108,6 @@
                         name: 'And more',
                         path: '',
                         img: 'ellipsis-h-solid'
-                    }
-                ],
-                experiences: [
-                    {
-                        name: 'memlin',
-                        date: '2018 to 2019 (10 months)',
-                        location: 'Lund, Sweden',
-                        img: 'lund_ideon'
-                    },
-                    {
-                        name: 'ecare',
-                        date: '2017 (10 months)',
-                        location: 'Montpellier, France',
-                        img: 'montpellier'
-                    },
-                    {
-                        name: 'freelance',
-                        date: '',
-                        location: 'World',
-                        img: 'freelance_thumb'
                     }
                 ]
             }

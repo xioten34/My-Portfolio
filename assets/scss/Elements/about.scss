@@ -1,0 +1,14 @@
+.is-img-about {
+    border-radius: 10px;
+    transition: all 0.2s;
+    z-index: 5;
+    background-size: cover;
+    @media only screen and (max-width: $mobile) {
+        max-width: 250px;
+    }
+}
+.is-skills {
+    .image.is-square {
+        padding: 2rem;
+    }
+}
