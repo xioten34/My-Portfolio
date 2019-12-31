@@ -47,10 +47,10 @@
 </template>
 
 <script>
-    import mainMenu from './Common/MainMenu'
-    import home from './sections/Home'
-    import about from './sections/About'
-    import works from './sections/Works'
+    import mainMenu from './common/mainMenu'
+    import home from './sections/home'
+    import about from './sections/about'
+    import works from './sections/works'
     import CookieLaw from 'vue-cookie-law'
 
     export default {

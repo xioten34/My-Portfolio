@@ -1,10 +1,5 @@
 <template>
     <section class="container" id="works">
-        <modal v-show="isModalActive" @close="isModalActive = false">
-            <p slot="content-modal" :class="'image ' + this.currentWork.size">
-                <img class="img-modal" :src="this.currentWork.img" :alt="this.currentWork.name">
-            </p>
-        </modal>
         <div class="has-margin-bottom-6">
             <div class="columns">
                 <div class="column is-5">
@@ -29,8 +24,9 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
-                                                <figure v-lazyload class="image is-clipped is-square">
-                                                    <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img" @click="showModal(works[key])">
+                                                <nuxt-link to="/sections/About">Accueil</nuxt-link>
+                                                <figure v-lazyload class="image is-clipped is-square"> 
+                                                    <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
                                                 </figure>
                                             </article>
                                         </div>
@@ -46,12 +42,8 @@
 </template>
 
 <script>
-    import Modal from '../Common/Modal.vue';
-
     export default {
-        components: {
-            Modal,
-        },
+        components: {},
         head () {
             return {
                 title: 'Web design | Damien',
@@ -122,3 +114,17 @@
         }
     }
 </script>
+
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 5000ms;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+</style>
