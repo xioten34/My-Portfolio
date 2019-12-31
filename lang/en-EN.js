@@ -23,7 +23,6 @@ export default {
       'portfolio_detail_sub_1': `Présentation`,
       'portfolio_detail_sub_2': `Projet & besoin`,
       'portfolio_detail_sub_3': `Solutions`,
-      'portfolio': `Some of my works`,
     },
     'text': {
       'about_1': `I love everything related to the web espacially web design. 

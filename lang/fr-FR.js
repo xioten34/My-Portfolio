@@ -20,11 +20,10 @@ export default {
     'main_title': {
       'about_1': `I love web design`,
       'about_2': `le front-end design`,
-      'portfolio_detail': `Quelques uns de mes projets`,
+      'portfolio_detail': `Mes projets`,
       'portfolio_detail_sub_1': `Présentation`,
       'portfolio_detail_sub_2': `Projet & besoin`,
       'portfolio_detail_sub_3': `Solutions`,
-      'portfolio': `Quelques réalisations`,
     },
     'text': {
       'about_1': `Je suis passionné par tout ce qui touche au web en ayant une préférence pour le design. Le développement, notamment le front est aussi important pour moi,
