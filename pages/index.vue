@@ -13,6 +13,15 @@
             </p>
         </section> -->
         <footer class="footer">
+            
+            <cookie-law :buttonText="$t('cookie.button')">
+                <div slot="message">
+                    {{ $t('cookie.message') }} <!-- <router-link to="legal-notes"> {{ $t('cookie.click') }} </router-link> -->
+                </div>
+                <button slot="button-text">
+                    {{ $t('cookie.button') }}
+                </button>
+            </cookie-law>
             <no-ssr>
                 <h2 class="content is-size-2 has-text-weight-semibold has-text-centered">
                     {{ $t('contact') }} <a class="has-text-purple" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a><span class="has-text-purple">.</span>
@@ -42,6 +51,7 @@
     import home from './sections/Home'
     import about from './sections/About'
     import works from './sections/Works'
+    import CookieLaw from 'vue-cookie-law'
 
     export default {
         transition: 'modal-fade',
@@ -49,7 +59,8 @@
             mainMenu,
             home,
             about,
-            works
+            works,
+            CookieLaw
         }
     }
 </script>

@@ -62,5 +62,10 @@ export default {
       'first': 'Oups ! rien ici',
       'second': 'Oups une erreur',
       'third': 'Retour à la maison',
+    },
+    'cookie': {
+      'message': 'Ce site utilise votre location géographique pour définir votre langue la plus adaptée.',
+      'button': 'J\'ai compris',
+      // 'click': 'En savoir plus',
     }
 }

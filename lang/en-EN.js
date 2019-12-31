@@ -67,5 +67,10 @@ export default {
       'first': 'Oups ! nothing here',
       'second': 'Oups an error',
       'third': 'Come back to home.',
+    },
+    'cookie': {
+      'message': 'This website uses your geographic location to define your most suitable language.',
+      'button': 'Got it',
+      // 'click': 'En savoir plus',
     }
 }
