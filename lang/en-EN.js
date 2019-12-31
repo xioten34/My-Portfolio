@@ -4,20 +4,16 @@ export default {
       'accueil': 'Home',
       'a propos': 'About',
       'portfolio': 'Portfolio',
-      'travel': 'Travel',
       'contact': 'Contact'
     },
     'home': {
-      'name': `Damien`,
-      'subtitle_1': `Thinking, Loving & Making`,
-      'subtitle_2': `Webdesign`,
-      'next': 'Watch next'
+      'name': `I'm Damien Jaillot`,
+      'subtitle_1': `French UI/UX Designer &`,
+      'subtitle_2': `Front-End Developer`,
     },
     'title': {
       'about': 'About me',
       'about_1': `Skills`,
-      'about_2': `Experiences`,
-      'experiences': 'Experiences',
       'portfolio': 'Portfolio',
     },
     'main_title': {
@@ -57,20 +53,7 @@ export default {
                     Je suis actuellement en freelance, depuis la fin de mon dernier projet en Suède, mais je suis à la recherche d'un post en tant
                     que web designer, pouvant aussi travailler sur le front.`
     },
-    'experiences': {
-      'memlin': `During 10 months, with my team, we worked on a project to create a new event management software. The goal was to remake the entire design, 
-                 review the flow of the application and improve UX. We had also to replace Jquery by the Vue.js (framework), also Bootstrap 
-                 by Bulma (css framework). Vue.js in order to make the application maintainable and Bulma to be more clear.
-                 We used Laravel for the back-end. My job was to improve the user experience, developing a new design, and developing the application with my team.`,
-      'ecare': `My work was mainly related to the graphic creation of documents, also a website for the company (wordpress). 
-                So I developed business cards, documents such as product sheets, with a specific design and the translation of these.`,
-      'freelance': `My work as a freelancer in 2010 was mainly related to development and also a part of design. All my projects were made from scratch. 
-                    After a few years of experience, I try to work especially on design, even if the front development interests me too. 
-                    I also realize some logo, documents. I am currently freelancing since the end of my last project in Sweden, 
-                    but I am looking for a post as a web designer.`
-    },
     'contact': 'Contact',
-    'contact_jp': '',
     'me': 'Me',
     'footer': {
       'text_1': 'Portfolio ',

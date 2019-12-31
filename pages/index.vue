@@ -15,7 +15,7 @@
         <footer class="footer">
             <no-ssr>
                 <h2 class="content is-size-2 has-text-weight-semibold has-text-centered">
-                    {{ $t('contact') }} <a class="has-text-purple" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a>{{ $t('contact_jp') }}<span class="has-text-purple">.</span>
+                    {{ $t('contact') }} <a class="has-text-purple" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a><span class="has-text-purple">.</span>
                 </h2>
             </no-ssr>
             <div class="content has-text-centered">
