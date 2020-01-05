@@ -120,7 +120,7 @@
 .page-leave-active {
   transition-property: opacity;
   transition-timing-function: ease-in-out;
-  transition-duration: 5000ms;
+  transition-duration: 2000ms;
 }
 
 .page-enter,
