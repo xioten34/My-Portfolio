@@ -52,8 +52,8 @@ export default {
                     Je suis actuellement en freelance, depuis la fin de mon dernier projet en Suède, mais je suis à la recherche d'un post en tant
                     que web designer, pouvant aussi travailler sur le front.`
     },
-    'contact': 'Contact',
-    'me': 'Me',
+    'contact': 'Contact me',
+    'me': 'here',
     'footer': {
       'text_1': 'Portfolio ',
       'text_2': 'by ',
