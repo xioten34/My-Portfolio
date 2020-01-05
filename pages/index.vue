@@ -4,7 +4,7 @@
         <home />
         <about />
         <works />
-       <!-- <section class="has-fullheight is-icon-list is-align-center has-text-purple">
+        <!-- <section class="has-fullheight is-icon-list is-align-center has-text-purple">
             <p>
                 <a href="https://www.instagram.com/j.dams" target="_blank"><fa-icon class="has-no-margin-top" :icon="['fab', 'instagram']" /></a>
                 <a href="https://www.linkedin.com/in/damien-jaillot" target="_blank"><fa-icon :icon="['fab', 'linkedin']" /></a>
