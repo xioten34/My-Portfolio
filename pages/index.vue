@@ -4,6 +4,7 @@
         <home />
         <about />
         <works />
+        <!--
         <section class="has-fullheight is-icon-list is-align-center has-rs-purple is-text-vertical-right">
             <p>
                 <a href="https://dribbble.com/j-dams" target="_blank" class="has-margin-bottom-1">dribbble</a>
@@ -13,6 +14,7 @@
                 <a href="mailto:damien.jaillot@gmail.com">email</a>
             </p>
         </section>
+        -->
         <!-- 
         <section class="has-fullheight is-icon-list is-align-center has-text-purple">
             <p>

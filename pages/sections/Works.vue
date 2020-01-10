@@ -24,8 +24,8 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
-                                                <nuxt-link to="/sections/About">Accueil</nuxt-link>
-                                                <figure v-lazyload class="image is-clipped is-square"> 
+                                                <!-- <nuxt-link to="/sections/About">Accueil</nuxt-link> -->
+                                                <figure v-lazyload class="image is-clipped is-4by3"> 
                                                     <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
                                                 </figure>
                                             </article>
@@ -55,17 +55,11 @@
         data() {
             return {
                 isModalActive: false,
-                firstWork: {
-                    name: 'UI design',
-                    type: 'ui-design',
-                    img: 'find_your_room',
-                    size: 'is-4by3'
-                },
                 works: [
                     {
                         name: 'ui-design',
                         type: 'ui-design',
-                        img: 'payment method',
+                        img: 'memlin',
                         size: 'is-4by3'
                     },
                     {

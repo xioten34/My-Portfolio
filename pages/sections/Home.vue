@@ -4,7 +4,7 @@
             <div class="column is-6 has-text-left">
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
-                        <span class="is-size-4">{{ $t('home.hello') }},</span>
+                        <!-- <span class="is-size-4">{{ $t('home.hello') }},</span> -->
                         <h1 class="title is-font-size-6 is-font-title">
                             {{ $t('home.name') }}<span class="has-text-purple">.</span>
                         </h1>
@@ -30,7 +30,7 @@
                     </div>
                 </section>
             </div>
-            <div class="column is-6 has-text-right">
+            <div class="column is-6 has-text-right-tablet has-text-centered-mobile">
                 <img class="img-face" src="~/assets/images/home/portrait.png" />
             </div>
         </div>
