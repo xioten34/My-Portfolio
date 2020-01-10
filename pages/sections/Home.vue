@@ -17,13 +17,13 @@
                         <div class="columns buttons has-margin-x-0 has-margin-y-6 is-mobile">
                             <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
                                 <a href="mailto:damien.jaillot@gmail.com" class="button button-contact">
-                                    Contact me
+                                    {{ $t('home.contact') }}
                                 </a>
                             </div>
                             <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
                                 <a href="/cv_damien.pdf" target="_blank" class="button button-resume">
                                     <fa-icon class="has-margin-right-8px" :icon="['fa', 'file-pdf']" />
-                                    My Resume
+                                    {{ $t('home.resume') }}
                                 </a>
                             </div>
                         </div>
