@@ -26,11 +26,11 @@
 import background from '~/assets/images/svg/element/background.png';
 
 export default {
-  props: ['error'],
-   data() {
+    props: ['error'],
+    data() {
         return {
             backgroundimg: background,
         }
-   }
+    }
 }
 </script>
