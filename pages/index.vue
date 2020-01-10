@@ -4,7 +4,7 @@
         <home />
         <about />
         <works />
-        <section class="has-fullheight is-icon-list is-align-center has-text-purple is-text-vertical-right">
+        <section class="has-fullheight is-icon-list is-align-center has-rs-purple is-text-vertical-right">
             <p>
                 <a href="https://dribbble.com/j-dams" target="_blank" class="has-margin-bottom-1">dribbble</a>
                 <a href="https://www.instagram.com/j.dams" target="_blank" class="has-margin-bottom-1">instagram</a>
@@ -23,7 +23,7 @@
             </p>
         </section> 
         -->
-        <footer class="footer">
+        <footer class="footer" :style="'background:url(' + backgroundimg + '); background-size: cover'">
             
             <cookie-law :buttonText="$t('cookie.button')">
                 <div slot="message">
@@ -34,13 +34,13 @@
                 </button>
             </cookie-law>
             <no-ssr>
-                <h2 class="content is-size-2 has-text-weight-semibold has-text-centered">
-                    {{ $t('contact') }} <a class="has-text-purple" href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a><span class="has-text-purple">.</span>
+                <h2 class="content is-size-2 has-text-weight-semibold has-text-centered has-text-purple">
+                    {{ $t('contact') }} <a href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a><span>.</span>
                 </h2>
             </no-ssr>
-            <div class="content has-text-centered">
+            <div class="content has-text-centered has-text-purple">
                 <p>
-                    <strong>{{ $t('footer.text_1') }}</strong>{{ $t('footer.text_2') }}<a class="has-text-purple" href="https://www.linkedin.com/in/damien-jaillot">Damien Jaillot</a>{{ $t('footer.text_3') }}. {{ $t('footer.text_4') }}<a class="has-text-purple" href="https://github.com/xioten34">Github</a>{{ $t('footer.text_5') }}.
+                    <strong class="has-text-purple">{{ $t('footer.text_1') }}</strong>{{ $t('footer.text_2') }}<a href="https://www.linkedin.com/in/damien-jaillot">Damien Jaillot</a>{{ $t('footer.text_3') }}. {{ $t('footer.text_4') }}<a href="https://github.com/xioten34">Github</a>{{ $t('footer.text_5') }}.
                 </p>
             </div>
             <div class="content has-text-centered is-size-5 has-text-purple">
@@ -50,8 +50,8 @@
                 <a href="https://github.com/xioten34" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'github']" /></a>
                 <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
             </div>
-            <div class="content has-text-centered">
-                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-purple">{{ $t('footer.mentions') }}</a>
+            <div class="content has-text-centered has-text-purple">
+                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-lightt">{{ $t('footer.mentions') }}</a>
             </div>
         </footer>
     </div>
@@ -63,6 +63,7 @@
     import about from './sections/about'
     import works from './sections/works'
     import CookieLaw from 'vue-cookie-law'
+    import background from '~/assets/images/svg/element/background.png';
 
     export default {
         transition: 'modal-fade',
@@ -72,6 +73,11 @@
             about,
             works,
             CookieLaw
+        },
+        data() {
+            return {
+                backgroundimg: background,
+            }
         }
     }
 </script>
