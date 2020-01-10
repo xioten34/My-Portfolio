@@ -11,6 +11,8 @@ export default {
       'subtitle_1': `French UI/UX Designer &`,
       'subtitle_2': `Front-End Developer`,
       'subtitle_3': `and actually also a bit illustrator 😉`,
+      'contact': `Contact me`,
+      'resume': `My Resume`,
     },
     'title': {
       'about': 'About me',

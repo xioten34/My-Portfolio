@@ -11,7 +11,8 @@ export default {
       'subtitle_1': `UI/UX Designer &`,
       'subtitle_2': `Front-End Développeur`,
       'subtitle_3': `et aussi un peu illustrateur 😉`,
-      // 'next': 'Voir la suite'
+      'contact': `Contactez moi`,
+      'resume': `Mon CV`,
     },
     'title': {
       'about': 'A Propos',
