@@ -1,7 +1,18 @@
 .has-text-purple {
     color: $purple !important;
     a {
-        color: $purple !important;
+        color: #a4ade6 !important;
+        &:hover {
+            color: whitesmoke !important;
+        }
+    }
+}
+.has-rs-purple {
+    a {
+        color: #9fa9e4 !important;
+        &:hover {
+            color: $purple !important;
+        }
     }
 }
 .has-background-purple {

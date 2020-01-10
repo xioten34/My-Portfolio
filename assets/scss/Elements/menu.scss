@@ -46,8 +46,9 @@
         .lang {
             font-weight: 600;
             .navbar-item {
+                color: #9fa9e4;
                 &:hover {
-                    color: #a6b0ef;
+                    color: $purple;
                 }
             }
             .nuxt-link-exact-active {
