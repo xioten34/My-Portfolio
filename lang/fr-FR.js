@@ -1,5 +1,4 @@
 export default {
-    'bonjour': 'Bonjour',
     'menu': {
       'accueil': 'Accueil',
       'a propos': 'A propos',
@@ -7,9 +6,11 @@ export default {
       'contact': 'Contact'
     },
     'home': {
-      'name': `I'm Damien Jaillot`,
-      'subtitle_1': `French UI/UX Designer &`,
-      'subtitle_2': `Front-End Developer`,
+      'hello': 'Bonjour',
+      'name': `DAMIEN JAILLOT`,
+      'subtitle_1': `UI/UX Designer &`,
+      'subtitle_2': `Front-End Développeur`,
+      'subtitle_3': `et aussi un peu illustrateur 😉`,
       // 'next': 'Voir la suite'
     },
     'title': {
@@ -18,19 +19,21 @@ export default {
       'portfolio': 'Portfolio',
     },
     'main_title': {
-      'about_1': `I love web design`,
-      'about_2': `le front-end design`,
+      'about_1': `UI/UX Designer`,
+      'about_2': `Front-end développeur`,
       'portfolio_detail': `Mes projets`,
       'portfolio_detail_sub_1': `Présentation`,
       'portfolio_detail_sub_2': `Projet & besoin`,
       'portfolio_detail_sub_3': `Solutions`,
     },
     'text': {
-      'about_1': `Je suis passionné par tout ce qui touche au web en ayant une préférence pour le design. Le développement, notamment le front est aussi important pour moi,
-                  pour pouvoir réaliser et mettre en place ce que j'ai imaginé. J'ai donc des compétences en web design mais aussi en développement front, seo etc. Je suis aussi
-                  intéressé par la vidéo, la photo ainsi que l'illustration.`,
-      'about_2': `Actuellement en recherche d'emploi en France, au Quebec ou au Japon.`,
-      'about_3': `En effet, actuellement en freelance depuis mon dernier poste en Suède, je cherche un poste de web designer au Quebec si possible ou en Asie tel que le Japon.`,
+      'about_1': `Je suis un passionné du design ainsi que tout ce qui touche au web en général, UX, développement, SEO, vidéo, illustration et autre. 
+                  Je ne passe pas une journée sans m'informer des nouveautés, des tendances etc. J'ai quelques années d'expérience maintenant que ça soit dans le design web mais aussi le 
+                  développement, notamment le développement front-end même si j'ai déjà travailler sur le back-end. Je cherche toujours à donner le meilleur de moi-même et à réaliser au mieux 
+                  chaque projet.`,
+      'about_2': `Actuellement en recherche de poste.`,
+      'about_3': `En effet, actuellement en freelance, je suis à la recherche d'une opportunité à temps plein en tant que #webdesigner, #uiuxdesigner ou #productdesigner.`,
+      'about_4': `N'hésitez pas à me contacter si vous êtes intéressé.`,
     },
     'portfolio_detail': {
       'presentation': `Memlin est une plate-forme de gestion d'événements en ligne.  

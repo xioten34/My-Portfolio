@@ -1,5 +1,4 @@
 export default {
-    'bonjour': 'Hello',
     'menu': {
       'accueil': 'Home',
       'a propos': 'About',
@@ -7,9 +6,11 @@ export default {
       'contact': 'Contact'
     },
     'home': {
-      'name': `I'm Damien Jaillot`,
+      'hello': 'Bonjour',
+      'name': `DAMIEN JAILLOT`,
       'subtitle_1': `French UI/UX Designer &`,
       'subtitle_2': `Front-End Developer`,
+      'subtitle_3': `and actually also a bit illustrator 😉`,
     },
     'title': {
       'about': 'About me',
@@ -25,12 +26,12 @@ export default {
       'portfolio_detail_sub_3': `Solutions`,
     },
     'text': {
-      'about_1': `I love everything related to the web espacially web design. 
-                  Front-end developement is also important for me, to be able to realize what i designed. 
-                  So I have skills in web design but also in development front, seo etc. I am also interested in video, photo and illustration.`,
-      'about_2': `Currently looking for a job in France, Quebec or Japan.`,
-      'about_3': `Indeed, currently freelance since my last position in Sweden, I am looking for a web designer position in Quebec if possible or in Asia such as Japan.`,
-      'resume': 'Resume'
+      'about_1': `I'm passionate about design as well as everything related to the web in general as UX, development, SEO, video, illustration and more. 
+                  I don't spend a day without being informed about news, trends, etc. I have a few years of experience in web design but also in development, 
+                  especially in front-end development even if I've already worked on back-end. I always try to give the best of myself and to carry out each project as well as possible.`,
+      'about_2': `Currently looking for a job.`,
+      'about_3': `Indeed, currently freelanceer, I am looking for a full time opportunity as #webdesigner, #uiuxdesigner ou #productdesigner.`,
+      'about_4': `Do not hesitate to contact me if you are interested.`,
     },
     'portfolio_detail': {
       'presentation': `Durant 10 mois, avec mon équipe, nous avons travaillé sur un projet de création 

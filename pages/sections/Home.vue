@@ -4,13 +4,16 @@
             <div class="column is-6 has-text-left">
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
-                        <span class="is-size-4">Hello,</span>
-                        <h1 class="title is-font-size-6">
+                        <span class="is-size-4">{{ $t('home.hello') }},</span>
+                        <h1 class="title is-font-size-6 is-font-title">
                             {{ $t('home.name') }}<span class="has-text-purple">.</span>
                         </h1>
-                        <h2 class="subtitle is-font-size-3-5 has-margin-y-1">
+                        <h2 class="subtitle is-font-size-3 has-margin-y-1">
                             {{ $t('home.subtitle_1') }} {{ $t('home.subtitle_2') }}
                         </h2>
+                        <h3 class="subtitle is-size-4 has-margin-y-1">
+                            ({{ $t('home.subtitle_3') }} )
+                        </h3>
                         <div class="columns buttons has-margin-x-0 has-margin-y-6 is-mobile">
                             <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
                                 <a href="mailto:damien.jaillot@gmail.com" class="button button-contact">

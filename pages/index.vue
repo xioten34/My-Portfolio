@@ -4,14 +4,25 @@
         <home />
         <about />
         <works />
-        <!-- <section class="has-fullheight is-icon-list is-align-center has-text-purple">
+        <section class="has-fullheight is-icon-list is-align-center has-text-purple is-text-vertical-right">
+            <p>
+                <a href="https://dribbble.com/j-dams" target="_blank" class="has-margin-bottom-1">dribbble</a>
+                <a href="https://www.instagram.com/j.dams" target="_blank" class="has-margin-bottom-1">instagram</a>
+                <a href="https://www.linkedin.com/in/damien-jaillot" target="_blank" class="has-margin-bottom-1">linkedin</a>
+                <a href="https://github.com/xioten34" target="_blank" class="has-margin-bottom-1">github</a>
+                <a href="mailto:damien.jaillot@gmail.com">email</a>
+            </p>
+        </section>
+        <!-- 
+        <section class="has-fullheight is-icon-list is-align-center has-text-purple">
             <p>
                 <a href="https://www.instagram.com/j.dams" target="_blank"><fa-icon class="has-no-margin-top" :icon="['fab', 'instagram']" /></a>
                 <a href="https://www.linkedin.com/in/damien-jaillot" target="_blank"><fa-icon :icon="['fab', 'linkedin']" /></a>
                 <a href="https://github.com/xioten34" target="_blank"><fa-icon :icon="['fab', 'github']" /></a>
                 <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
             </p>
-        </section> -->
+        </section> 
+        -->
         <footer class="footer">
             
             <cookie-law :buttonText="$t('cookie.button')">
