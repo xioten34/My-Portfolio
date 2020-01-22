@@ -24,10 +24,11 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
-                                                <!-- <nuxt-link to="/sections/About">Accueil</nuxt-link> -->
-                                                <figure v-lazyload class="image is-clipped is-4by3"> 
-                                                    <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
-                                                </figure>
+                                               <nuxt-link :to="{ path: '/common/' + work.name}">
+                                                    <figure v-lazyload class="image is-clipped is-4by3"> 
+                                                        <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
+                                                    </figure>
+                                                </nuxt-link>
                                             </article>
                                         </div>
                                     </div>
@@ -42,6 +43,8 @@
 </template>
 
 <script>
+    import mainMenu from '../common/memlin';
+
     export default {
         components: {},
         head () {
@@ -54,56 +57,39 @@
         },
         data() {
             return {
-                isModalActive: false,
                 works: [
                     {
-                        name: 'ui-design',
+                        name: 'memlin',
                         type: 'ui-design',
                         img: 'memlin_project',
-                        size: 'is-4by3'
                     },
                     {
-                        name: 'design website',
+                        name: 'legalfis',
                         type: 'ui-design',
                         img: 'legalfis_project',
-                        size: 'is-4by3'
                     },
                     {
-                        name: 'ui-design',
+                        name: 'source',
                         type: 'ui-design',
                         img: 'source_project',
-                        size: 'is-4by3'
                     },
                     {
-                        name: 'ui-design',
+                        name: 'next',
                         type: 'ui-design',
                         img: 'new_project',
-                        size: 'is-4by3'
                     }                    
                 ],
                 currentWork: {
-                    name: 'test',
+                    name: '',
                     type: '',
                     img: '',
-                    size: '',
                     title: ''
                 }
             }
         },
         methods: {
-            showModalFirst() {
-                this.currentWork.name = this.firstWork.name
-                this.currentWork.img = require('~/assets/images/works/' + this.firstWork.img + '_big.png') 
-                this.currentWork.size = this.firstWork.size
-                this.currentWork.path = this.firstWork.path
-                this.isModalActive = true
-            },
             showModal(work) {
                 this.currentWork.name = work.name
-                this.currentWork.img = require('~/assets/images/works/' + work.img + '_big.png')
-                this.currentWork.size = work.size
-                this.currentWork.path = work.path
-                this.isModalActive = true
             }
         }
     }

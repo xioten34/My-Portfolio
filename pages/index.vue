@@ -68,7 +68,7 @@
     import background from '~/assets/images/svg/element/background.png';
 
     export default {
-        transition: 'modal-fade',
+        transition: "home",
         components: {
             mainMenu,
             home,
