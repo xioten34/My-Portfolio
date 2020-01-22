@@ -50,7 +50,6 @@ module.exports = {
   */
   modules: [,
     '@nuxtjs/bulma',
-    ['@nuxtjs/google-tag-manager', { id: 'UA-156702075-1' }],
     ['nuxt-i18n', {
       locales: [
         {
