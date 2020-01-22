@@ -59,25 +59,25 @@
                     {
                         name: 'ui-design',
                         type: 'ui-design',
-                        img: 'memlin',
+                        img: 'memlin_project',
                         size: 'is-4by3'
                     },
                     {
                         name: 'design website',
                         type: 'ui-design',
-                        img: 'corpsetame',
+                        img: 'legalfis_project',
                         size: 'is-4by3'
                     },
                     {
                         name: 'ui-design',
                         type: 'ui-design',
-                        img: 'event-spa',
+                        img: 'source_project',
                         size: 'is-4by3'
                     },
                     {
                         name: 'ui-design',
                         type: 'ui-design',
-                        img: 'event',
+                        img: 'new_project',
                         size: 'is-4by3'
                     }                    
                 ],
