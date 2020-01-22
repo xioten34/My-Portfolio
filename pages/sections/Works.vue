@@ -24,7 +24,7 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
-                                               <nuxt-link :to="{ path: '/common/' + work.name}">
+                                               <nuxt-link :to="{ path: lang + '/projects/project', query:{id:work.name}}">
                                                     <figure v-lazyload class="image is-clipped is-4by3"> 
                                                         <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
                                                     </figure>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-    import mainMenu from '../common/memlin';
+    import project from '../projects/project';
 
     export default {
         components: {},
@@ -57,19 +57,20 @@
         },
         data() {
             return {
+                lang: this.$i18n.locale == 'en' ? 'en' : '',
                 works: [
                     {
-                        name: 'memlin',
+                        name: 'Memlin',
                         type: 'ui-design',
                         img: 'memlin_project',
                     },
                     {
-                        name: 'legalfis',
+                        name: 'Legalfis',
                         type: 'ui-design',
                         img: 'legalfis_project',
                     },
                     {
-                        name: 'source',
+                        name: 'Source',
                         type: 'ui-design',
                         img: 'source_project',
                     },

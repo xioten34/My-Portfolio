@@ -31,6 +31,9 @@ export default {
       'about_3': `Indeed, currently freelanceer, I am looking for a full time opportunity as #webdesigner, #uiuxdesigner ou #productdesigner.`,
       'about_4': `Do not hesitate to contact me if you are interested.`,
     },
+    'project': {
+      'subtitleMemlin': 'Friendly event management system for all king of events.',
+    },
     'footer': {
       'contact': 'Contact me',
       'me': 'here',

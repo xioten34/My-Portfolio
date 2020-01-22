@@ -32,6 +32,9 @@ export default {
       'about_3': `En effet, actuellement en freelance, je suis à la recherche d'une opportunité à temps plein en tant que #webdesigner, #uiuxdesigner ou #productdesigner.`,
       'about_4': `N'hésitez pas à me contacter si vous êtes intéressé.`,
     },
+    'project': {
+      'subtitleMemlin': 'Système de gestion d\'événements convivial pour tous types d\'événements.',
+    },
     'footer': {
       'contact': 'Contactez moi',
       'me': 'ici',
