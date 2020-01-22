@@ -37,7 +37,7 @@
             </cookie-law>
             <no-ssr>
                 <h2 class="content is-size-2 has-text-weight-semibold has-text-centered has-text-purple">
-                    {{ $t('contact') }} <a href="mailto:damien.jaillot@gmail.com">{{ $t('me') }}</a><span>.</span>
+                    {{ $t('footer.contact') }} <a href="mailto:damien.jaillot@gmail.com">{{ $t('footer.me') }}</a><span>.</span>
                 </h2>
             </no-ssr>
             <div class="content has-text-centered has-text-purple">
