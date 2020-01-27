@@ -53,7 +53,7 @@
                 <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
             </div>
             <div class="content has-text-centered has-text-purple">
-                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-lightt">{{ $t('footer.mentions') }}</a>
+                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-lightt">{{ $t('footer.mentions') }}</a> - <nuxt-link :to="{ path: lang + '/RGPD/confidentialite'}" class="has-text-lightt">{{ $t('footer.rgpd') }}</nuxt-link>
             </div>
         </footer>
     </div>
@@ -79,10 +79,8 @@
         data() {
             return {
                 backgroundimg: background,
+                lang: this.$i18n.locale == 'en' ? 'en' : '',
             }
-        },
-        mounted() {
-            console.log(this.$i18n.locale);
         }
     }
 </script>

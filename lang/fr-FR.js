@@ -43,7 +43,8 @@ export default {
       'text_3': '',
       'text_4': 'Le code source est disponible sur ',
       'text_5': '',
-      'mentions': 'Mentions Légales'
+      'mentions': 'Mentions Légales',
+      'rgpd': 'Confidentialité'
     },
     'error': {
       'first': 'Oups ! rien ici',
@@ -54,5 +55,23 @@ export default {
       'message': 'Ce site utilise votre location géographique pour définir votre langue la plus adaptée.',
       'button': 'J\'ai compris',
       // 'click': 'En savoir plus',
+    },
+    'rgpd': {
+      'confidentialite': 'Confidentialité et gestion des Cookies',
+      'intro': 'Cette page vous permettra d\'en apprendre plus sur l\'utilisation et le fonctionnement des cookies présent sur mon portfolio.',
+      'cookies': {
+        'title': 'Un cookie, c\'est quoi ?',
+        'definition': `Un cookie est un petit fichier stocké votre navigateur Internet, échangé entre le site Internet que vous consultez et votre ordinateur et permettant 
+                        d\'enregistrer diverses informations. Ses principaux usages sont de faciliter la navigation, d\'activer certaines fonctionnalités ou encore d\'envoyer des données 
+                        d\'ordre statistique sur l\'utilisation et la fréquentation du site Internet.`,
+        'indispensables': 'Cookies fonctionnels',
+        'indi_text': `Les seuls cookies fonctionnels que nous utilisons sont:`,
+        'SERVERID': 'SERVERID...',
+        'servText': 'Un cookie technique utilisé par notre hébergeur (OVH) pour faire de la répartition de charge serveur.',
+        'i18n': 'i18n_redirected',
+        'i18nText': 'Un cookie technique utilisé sur notre site pour afficher notre site en Anglais ou Français selon votre pays.',
+        'confidentialite_2': 'Données personnelles',
+        'intro_2': `Aucune donnée personnelle n'est collectée.`,
+      },
     }
 }
