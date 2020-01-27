@@ -87,11 +87,6 @@
                     title: ''
                 }
             }
-        },
-        methods: {
-            showModal(work) {
-                this.currentWork.name = work.name
-            }
         }
     }
 </script>

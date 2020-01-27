@@ -50,7 +50,6 @@
         },
         data() {
             return {
-                isModalActive: false,
                 skills: [
                     {
                         name: 'Adobe photoshop',
