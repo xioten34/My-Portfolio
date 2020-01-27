@@ -10,7 +10,7 @@
                         <h1 class="title is-size-1 is-uppercase has-text-light" v-else>
                             {{ $t('error.second') }}<span class="has-text-purple">.</span>
                         </h1>
-                        <nuxt-link to="/">
+                        <nuxt-link :to="{ path: '/' + lang}">
                             <h2 class="subtitle is-size-3 font-noto-jp-thin has-text-purple">
                                 {{ $t('error.third') }}
                             </h2>
@@ -30,6 +30,7 @@ export default {
     data() {
         return {
             backgroundimg: background,
+            lang: this.$i18n.locale == 'en' ? 'en' : '',
         }
     }
 }

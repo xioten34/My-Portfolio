@@ -14,8 +14,10 @@
             <div :class="['overlay-mobile ', showNavMobile ? 'is-open' : '']">
                 <nav class="overlay-menu">
                     <ul>
-                        <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('fr')">Français</nuxt-link></li>
-                        <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('en')">English</nuxt-link></li>
+                        <!-- <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('fr')">Français</nuxt-link></li>
+                        <li><nuxt-link class="has-margin-bottom-2" :to="switchLocalePath('en')">English</nuxt-link></li> -->
+                        <li><a href="/" :class="['has-margin-bottom-2', lang == '' ? 'lang-active' : '']">Français</a></li>
+                        <li><a href="/en" :class="['has-margin-bottom-2', lang == 'en' ? 'lang-active' : '']">English</a></li>
                     </ul>
                 </nav>
             </div>
@@ -26,8 +28,10 @@
                     <nuxt-link class="navbar-item" to="/#works">{{ $t('menu[\'portfolio\']') }}</nuxt-link>
                 </div> -->
                 <div class="navbar-end lang">
-                    <nuxt-link class="navbar-item" :to="switchLocalePath('fr')">FR</nuxt-link>
-                    <nuxt-link class="navbar-item" :to="switchLocalePath('en')">EN</nuxt-link>
+                   <!-- <nuxt-link class="navbar-item" :to="switchLocalePath('fr')">FR</nuxt-link>
+                    <nuxt-link class="navbar-item" :to="switchLocalePath('en')">EN</nuxt-link> -->
+                    <a href="/" :class="['navbar-item', lang == '' ? 'lang-active' : '']">FR</a>
+                    <a href="/en" :class="['navbar-item', lang == 'en' ? 'lang-active' : '']">EN</a>
                     <!-- <span class="navbar-item">
                         <a href="#" class="button has-no-border has-background-purple">{{ $t('menu[\'contact\']') }}</a>
                     </span> -->
@@ -41,7 +45,8 @@
     export default {
         data() {
             return {
-               showNavMobile: false,
+                lang: this.$i18n.locale == 'en' ? 'en' : '',
+                showNavMobile: false,
             }
         },
         methods: {
