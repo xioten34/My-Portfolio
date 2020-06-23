@@ -20,14 +20,13 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:black,bold,thin' },
     ]
   },
 
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FF6F61' },
+  loading: { color: '#4b57a1' },
 
   /*
   ** Global CSS
@@ -42,7 +41,8 @@ module.exports = {
   */
   plugins: [
     '~/plugins/fontawesome.js',
-    '~/plugins/directives.js'
+    '~/plugins/directives.js',
+    { src: '~/plugins/ga.js', mode: 'client' }
   ],
 
   /*
@@ -69,8 +69,22 @@ module.exports = {
       langDir: 'lang/',
       defaultLocale: 'fr',
     }],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-gtag'
   ],
+
+  'google-gtag': {
+    id: 'UA-156702075-1',
+    config: {
+      anonymize_ip: true, // anonymize IP 
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      linker: {
+        domains: ['domain.com','domain.org']
+      }
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
+  }
 
 
   /**
@@ -93,14 +107,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    postcss: {
-      preset: {
-        features: {
-          customProperties: false
-        }
-      }
-    },
-
     /*
     ** You can extend webpack config here
     */
