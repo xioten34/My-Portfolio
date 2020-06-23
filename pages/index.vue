@@ -46,14 +46,14 @@
                 </p>
             </div>
             <div class="content has-text-centered is-size-5 has-text-purple">
+                <a href="https://www.linkedin.com/in/damien-jaillot" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'linkedin']" /></a>
                 <a href="https://dribbble.com/j-dams" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'dribbble']" /></a>
                 <a href="https://www.instagram.com/j.dams" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'instagram']" /></a>
-                <a href="https://www.linkedin.com/in/damien-jaillot" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'linkedin']" /></a>
                 <a href="https://github.com/xioten34" class="has-margin-right-0-3" target="_blank"><fa-icon :icon="['fab', 'github']" /></a>
                 <a href="mailto:damien.jaillot@gmail.com"><fa-icon :icon="['fa', 'envelope']" /></a>
             </div>
             <div class="content has-text-centered has-text-purple">
-                <a href="/MENTIONS_LEGALES.pdf" target="_blank" class="has-text-lightt">{{ $t('footer.mentions') }}</a> - <nuxt-link :to="{ path: lang + '/RGPD/confidentialite'}" class="has-text-lightt">{{ $t('footer.rgpd') }}</nuxt-link>
+                <a href="/mentions_legales.pdf" target="_blank" class="has-text-lightt">{{ $t('footer.mentions') }}</a> - <nuxt-link :to="{ path: lang + '/RGPD/confidentialite'}" class="has-text-lightt">{{ $t('footer.rgpd') }}</nuxt-link>
             </div>
         </footer>
     </div>

@@ -24,11 +24,11 @@
                                     <div class="columns is-multiline is-mobile">
                                         <div v-for="(work, key) in works" :key="key" class="column is-half">
                                             <article class="tile is-child">
-                                               <nuxt-link :to="{ path: lang + '/projects/project', query:{id:work.name}}">
+                                                <!-- <nuxt-link :to="{ path: lang + '/projects/project', query:{id:work.name}}"> -->
                                                     <figure v-lazyload class="image is-clipped is-4by3"> 
                                                         <img class="has-background-purple is-cursor-hand" :data-url="require('~/assets/images/works/' + work.img + '.png')" :alt="work.img">
                                                     </figure>
-                                                </nuxt-link>
+                                                <!-- </nuxt-link> -->
                                             </article>
                                         </div>
                                     </div>
@@ -75,10 +75,15 @@
                         img: 'source_project',
                     },
                     {
+                        name: 'Mon Jardin',
+                        type: 'ui-design',
+                        img: 'mon_jardin_project',
+                    },
+                    {
                         name: 'next',
                         type: 'ui-design',
                         img: 'new_project',
-                    }                    
+                    }                     
                 ],
                 currentWork: {
                     name: '',

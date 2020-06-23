@@ -14,7 +14,7 @@
                             {{ id }}<span class="has-text-purple">.</span>
                         </h1>
                         <h2 class="subtitle is-font-size-3 has-margin-y-1">
-                           {{ $t('project.subtitle' + id) }}
+                           {{ $t('project.' + id + '.subtitle') }}
                         </h2>
                     </div>
                 </section>
@@ -23,18 +23,18 @@
         <div class="columns info_company has-margin-bottom-5 has-margin-top-2">
             <div class="column is-offset-1 is-2">
                 <h3 class="title is-size-6 is-font-title">
-                    Company
+                    {{ $t('project.company') }}
                 </h3>
                 <p class="subtitle is-size-6 has-margin-y-1">
-                    Memlin AB, Sweden
+                    {{ $t('project.' + id + '.company') }}
                 </p>
             </div>
             <div class="column is-offset-1">
                 <h3 class="title is-size-6 is-font-title">
-                    Service
+                    {{ $t('project.service') }}
                 </h3>
                 <p class="subtitle is-size-6 has-margin-y-1">
-                    Event Management, SAAS
+                    {{ $t('project.' + id + '.service') }}
                 </p>
             </div>
         </div>
@@ -42,22 +42,48 @@
             <div class="column is-6 is-offset-1">
                 <section>
                     <div>
-                        <span class="has-text-weight-semibold has-text-grey-light">{{ $t('title.about') }}<span class="has-text-purple">.</span></span>
-                        <h2 class="title has-text-weight-bold has-margin-top-2 is-font-title">
-                            {{ $t('main_title.about_1') }}<br><span class="has-text-purple">&</span> {{ $t('main_title.about_2') }}<span class="has-text-purple">.</span>
-                        </h2>
+                        <h6 class="has-text-weight-semibold has-margin-bottom-2 has-text-grey-light">{{ $t('project.about') }} {{ id }}<span class="has-text-purple">.</span></h6>
                         <p class="is-size-6 has-text-weight-light">
-                            {{ $t('text.about_1') }}
+                            {{ $t('project.' + id + '.about') }}
                         </p>
-                        <p class="is-size-6 has-text-weight-bold has-margin-y-1">
-                            {{ $t('text.about_2') }}
-                        </p>
+                        <h6 class="has-text-weight-semibold has-margin-y-2 has-text-grey-light">{{ $t('project.problem') }}<span class="has-text-purple">.</span></h6>
                         <p class="is-size-6 has-text-weight-light">
-                            {{ $t('text.about_3') }}
+                            {{ $t('project.' + id + '.problem') }}
                         </p>
-                        <p class="has-margin-top-1">
-                            <a href="mailto:damien.jaillot@gmail.com" class="has-text-weight-semibold has-text-purple">{{ $t('text.about_4') }}</a>
+                        <h6 class="has-text-weight-semibold has-margin-y-2 has-text-grey-light">{{ $t('project.process') }}<span class="has-text-purple">.</span></h6>
+                        <p class="is-size-6 has-text-weight-light">
+                            {{ $t('project.' + id + '.process') }}
                         </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-11 is-offset-1">
+                <section>
+                    <div class="has-text-centered">
+                        <img class="process" title="architecture design" :src="'~/assets/images/woks/projects/' + id + '-process.png'" />
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-6 is-offset-1">
+                <section>
+                    <div>
+                        <h6 class="has-text-weight-semibold has-margin-y-2 has-text-grey-light">{{ $t('project.solution') }}<span class="has-text-purple">.</span></h6>
+                        <p class="is-size-6 has-text-weight-light">
+                            {{ $t('project.' + id + '.solution') }}
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-11 is-offset-1">
+                <section>
+                    <div class="has-text-centered">
+                        <img class="process" title="architecture design" :src="'~/assets/images/woks/projects/' + id + '-solution.png'" />
                     </div>
                 </section>
             </div>
@@ -80,32 +106,6 @@
         data() {
             return {
                 id: this.$route.query.id,
-                projects: [
-                    {
-                        name: 'Memlin',
-                        title: 'titleMemlin',
-                        comp: 'Company',
-                        subComp: 'subCompMemlin',
-                        service: 'Service',
-                        subService: 'subServiceMemlin',
-                    },
-                    {
-                        name: 'LEGALFIS CONSULT',
-                        title: 'titleLegalfis',
-                        comp: 'Company',
-                        subComp: 'subCompLegalfis',
-                        service: 'Service',
-                        subService: 'subServiceLegalfis',
-                    },
-                    {
-                        name: 'Source',
-                        title: 'titleSource',
-                        comp: 'Company',
-                        subComp: 'subCompSource',
-                        service: 'Service',
-                        subService: 'subServiceSource',
-                    }
-                ],
                 lang: this.$i18n.locale == 'en' ? 'en' : '',
             }
         }

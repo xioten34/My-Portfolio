@@ -5,7 +5,7 @@
                 <section class="has-fullheight is-align-center">
                     <div class="is-main-title">
                         <!-- <span class="is-size-4">{{ $t('home.hello') }},</span> -->
-                        <h1 class="title is-font-size-6 is-font-title">
+                        <h1 class="title is-font-size-title is-font-title">
                             {{ $t('home.name') }}<span class="has-text-purple">.</span>
                         </h1>
                         <h2 class="subtitle is-font-size-3 has-margin-y-1">
@@ -21,7 +21,7 @@
                                 </a>
                             </div>
                             <div class="column is-two-fifths-desktop is-half-mobile is-half-tablet">
-                                <a href="/cv_damien.pdf" target="_blank" class="button button-resume">
+                                <a href="https://damien-jaillot.envoi-cv.com/p/3fc4537fff" target="_blank" class="button button-resume">
                                     <fa-icon class="has-margin-right-8px" :icon="['fa', 'file-pdf']" />
                                     {{ $t('home.resume') }}
                                 </a>
@@ -31,7 +31,7 @@
                 </section>
             </div>
             <div class="column is-6 has-text-right-tablet has-text-centered-mobile">
-                <img class="img-face" src="~/assets/images/home/portrait.png" />
+                <img class="img-face" src="~/assets/images/home/portrait.jpg" />
             </div>
         </div>
     </section>
