@@ -5,9 +5,9 @@
     overflow: hidden !important;
     .img {
         &-face {
-            height: 90%;
+            // height: 90%;
             max-height: 90% !important;
-            max-width: none !important;
+            max-width: 90% !important;
             border-radius: 10px;
             transition: all 0.2s;
             z-index: 5;
