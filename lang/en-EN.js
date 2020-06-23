@@ -47,7 +47,7 @@ export default {
                                We found that many organizers compromised or used tools that were simply not effective because they were created for something else.`,
         'problem':             '',
         'process':             '',
-    
+      }
     },
     'footer': {
       'contact':              'Contact me',

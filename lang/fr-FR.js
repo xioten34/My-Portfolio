@@ -43,11 +43,12 @@ export default {
         'subtitle':           'Système de gestion d\'événements pour tous types d\'événements.',
         'company':            'Memlin AB, Suède',
         'service':            'gestion d\'évènement, SAAS',
-        'about':              `Memlin was founded since there were no good systems for handling several different types of events. There were simpler registration systems, 
-                               education systems or really complex conferencing tools. 
-                               We found that many organizers compromised or used tools that were simply not effective because they were created for something else.`,
-        'problem':             '',
-        'process':             '',
+        'about':              `Memlin est une start-up Suèdoise implentée à Lund. L'équipe travail sur une application web destiné aux entreprise, permettant la gestion d'évènements. 
+                               Elle a été fondé puisque qu'il n'existait pas de bons systèmes pour gérer plusieurs types d'événements.`,
+        'problem':             `L'application, déjà existante, a eu besoin d'une amélioration en terme de simplicité d'utilisation, que ce soit au niveau de la navigation, des fonctionnalités mais aussi au niveau
+                                de l'interface. Le projet était donc de rendre l'application plus clair, plus user-friendly mais aussi plus moderne`,
+        'process':             `Nous avons tout d'abord étudié l'application en réalisant un premier schéma représentant l'architecture de l'ensemble de l'application. Ceci nous a permis de mettre à plat 
+                                la structure et ainsi de comprendre et d'améliorer le flow utilisateur pour obtenir une solution simple et clair.`,                       
         'solution':            '',
       },
     },
