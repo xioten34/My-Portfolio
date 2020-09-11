@@ -1,0 +1,46 @@
+.fade-in-up-2 {
+    animation: fade-in-up 2s ease;
+}
+
+.fade-in-up-3 {
+    animation: fade-in-up 3s ease;
+}
+
+.fade-in-up-3-2 {
+    animation: fade-in-up 3.5s ease;
+}
+
+.fade-in-down-2 {
+    animation: fade-in-down 2s ease;
+}
+
+.fade-in-down-3 {
+    animation: fade-in-down 2.1s ease;
+}
+
+.reveal {
+    overflow: hidden;
+    animation: reveal 2s linear forwards;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
