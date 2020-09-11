@@ -21,8 +21,8 @@
                         <div class="tile is-vertical">
                             <div class="tile">
                                 <div class="tile is-vertical is-parent">
-                                    <div class="columns is-multiline is-mobile">
-                                        <div v-for="(work, key) in works" :key="key" class="column is-half">
+                                    <div class="columns is-multiline is-tablet">
+                                        <div v-for="(work, key) in works" :key="key" class="column is-half-desktop is-half-tablet">
                                             <article class="tile is-child">
                                                 <!-- <nuxt-link :to="{ path: lang + '/projects/project', query:{id:work.name}}"> -->
                                                     <figure v-lazyload class="image is-clipped is-4by3"> 
